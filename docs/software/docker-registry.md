@@ -29,3 +29,15 @@ mc cp workaround_s3aws_walk_issue_github_docker_distribtuion_issue_3200 MC_HOST_
 # Verify that the file has been uploaded
 mc ls MC_HOST_CONFIG_NAME/BUCKET_NAME/docker/registry/v2/repositories/
 ```
+
+## Configuration through Environment Variables Fails
+
+Sometimes when "deeply nesting" environment variables to configure a certain aspect of the docker-registry configuration, e.g., `REGISTRY_STORAGE_MAINTENANCE_READONLY_ENABLED`, need to be specified as YAML or JSON starting from "a few levels" further below of the config structure:
+
+```yaml
+REGISTRY_STORAGE_MAINTENANCE: |-
+  uploadpurging:
+    enabled: false
+```
+
+This has been posted for a similar config situation by [@0rax](https://github.com/0rax) in [GitHub docker/distribution - Registry - Upload purging environment overrides crash registry at startup Issue #1736](https://github.com/docker/distribution/issues/1736#issuecomment-435362014).
