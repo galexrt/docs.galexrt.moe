@@ -3,8 +3,6 @@ title: "mdadm"
 date: 2020-01-31
 ---
 
-Checkout the [mdadm man page](https://linux.die.net/man/8/mdadm).
-
 !!! note
     Don't forget to keep your [`mdadm.conf`](https://linux.die.net/man/5/mdadm.conf) uptodate when creating, modifiying, deleting mdadm arrays.
 
@@ -42,3 +40,7 @@ blockdev --setra 65536 /dev/md0
 # Set stripe_cache_size to 16 MiB for /dev/md0
 echo 16384 > /sys/block/md0/md/stripe_cache_size
 ```
+
+## References
+
+* [mdadm man page](https://linux.die.net/man/8/mdadm)

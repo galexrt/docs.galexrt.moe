@@ -3,11 +3,18 @@ title: "sysctl"
 date: 2020-01-25
 ---
 
-See [My Sysctl Parameters - Edenmal](https://edenmal.moe/post/2019/My-sysctl-Parameters/) and / or [90-edenmal-custom.conf - GitHub Gist](https://gist.github.com/galexrt/8faa48a05bab303ec922bd89e8f7adc5) for more information on the used `sysctl` settings / values.
+See [GitHub Gist `90-edenmal-custom.conf`](https://gist.github.com/galexrt/8faa48a05bab303ec922bd89e8f7adc5) for more information on the used `sysctl` settings / values.
+
+The sysctl can be easily using the following command:
+```console
+curl -L gist.githubusercontent.com/galexrt/8faa48a05bab303ec922bd89e8f7adc5/raw/90-edenmal-custom.conf -o /etc/sysctl.d/90-edenmal-custom.conf
+sysctl --system
+```
 
 ***
 
-The below list might be outedated, please check the blog post linked above and / or the GitHub Gist.
+!!! info
+    The below list might be outedated, please check the GitHub Gist.
 
 ```ini
 fs.aio_max_nr = 1048576
@@ -46,14 +53,14 @@ net.ipv4.conf.all.igmpv3_unsolicited_report_interval = 1000
 net.ipv4.conf.all.ignore_routes_with_linkdown = 0
 net.ipv4.conf.all.log_martians = 1
 net.ipv4.conf.all.proxy_arp = 0
-net.ipv4.conf.all.rp_filter = 1
+net.ipv4.conf.all.rp_filter = 0
 net.ipv4.conf.all.secure_redirects = 1
 net.ipv4.conf.all.send_redirects = 0
 net.ipv4.conf.default.accept_redirects = 0
 net.ipv4.conf.default.accept_source_route = 0
 net.ipv4.conf.default.forwarding = 1
 net.ipv4.conf.default.log_martians = 1
-net.ipv4.conf.default.rp_filter = 1
+net.ipv4.conf.default.rp_filter = 0
 net.ipv4.conf.default.secure_redirects = 1
 net.ipv4.conf.default.send_redirects = 0
 net.ipv4.conf.lo.accept_source_route = 1
@@ -71,6 +78,7 @@ net.ipv4.neigh.default.gc_thresh2 = 6144
 net.ipv4.neigh.default.gc_thresh3 = 8192
 net.ipv4.netfilter.nf_conntrack_generic_timeout = 300
 net.ipv4.netfilter.nf_conntrack_tcp_timeout_time_wait = 60
+net.ipv4.tcp_abort_on_overflow = 1
 net.ipv4.tcp_congestion_control = bbr
 net.ipv4.tcp_fin_timeout = 10
 net.ipv4.tcp_keepalive_intvl = 25
