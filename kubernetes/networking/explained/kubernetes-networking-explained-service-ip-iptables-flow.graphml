@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yEd 3.18.0.2-->
+  <key attr.name="Description" attr.type="string" for="graph" id="d0"/>
+  <key for="port" id="d1" yfiles.type="portgraphics"/>
+  <key for="port" id="d2" yfiles.type="portgeometry"/>
+  <key for="port" id="d3" yfiles.type="portuserdata"/>
+  <key attr.name="url" attr.type="string" for="node" id="d4"/>
+  <key attr.name="description" attr.type="string" for="node" id="d5"/>
+  <key for="node" id="d6" yfiles.type="nodegraphics"/>
+  <key for="graphml" id="d7" yfiles.type="resources"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d8"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d9"/>
+  <key for="edge" id="d10" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <data key="d0"/>
+    <node id="n0">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="65.0" width="65.0" x="387.5" y="12.015625"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.314453125" x="15.8427734375" y="23.515625">Start<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n1">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="65.0" width="65.0" x="387.5" y="1199.953125"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="26.8046875" x="19.09765625" y="23.515625">End<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n2" yfiles.foldertype="group">
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="99.96875" width="756.0" x="42.0" y="910.015625"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="91.33984375" x="0.0" y="0.0">POSTROUTING</y:NodeLabel>
+              <y:State autoResize="true" closed="false" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="50.0" width="50.0" x="-385.0" y="1025.0"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="11.634765625" x="0.0" y="0.0">5</y:NodeLabel>
+              <y:State autoResize="true" closed="true" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n2:">
+        <node id="n2::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="726.0" x="57.0" y="942.984375"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="478.626953125" x="123.6865234375" y="17.015625">-m comment --comment "kubernetes postrouting rules" -j KUBE-POSTROUTING<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n3" yfiles.foldertype="group">
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="190.71875" width="928.3903157894733" x="773.3048421052633" y="704.296875"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="203.48828125" x="0.0" y="0.0">KUBE-SEP-ZYXWVUTSRQPOMNLK</y:NodeLabel>
+              <y:State autoResize="true" closed="false" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="50.0" width="50.0" x="325.5" y="707.78125"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="11.634765625" x="0.0" y="0.0">5</y:NodeLabel>
+              <y:State autoResize="true" closed="true" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n3:">
+        <node id="n3::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="819.0" x="828.0" y="737.265625"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="707.916015625" x="55.5419921875" y="10.03125">-s 100.64.20.8/32 -m comment --comment "zerbytes-live-proj-s3/minio-0-exporter:http-metrics" -j KUBE-MARK-MASQ
+Mark traffic for masquerade when the source IP is the same Service Endpoint<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n3::n1">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="898.3903157894733" x="788.3048421052633" y="828.015625"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="895.439453125" x="1.475431332236667" y="17.015625">-p tcp -m comment --comment "NAMESPACE/SERVICE_NAME:SERVICE_PORT_NAME" -m tcp -j DNAT --to-destination 100.64.20.8:TARGET_POD_PORT<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n4" yfiles.foldertype="group">
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="190.71875" width="928.3903157894733" x="-934.5" y="710.96875"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="192.07421875" x="0.0" y="0.0">KUBE-SEP-ABCDEFGHIJKLMNOP</y:NodeLabel>
+              <y:State autoResize="true" closed="false" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="50.0" width="50.0" x="-604.5" y="707.78125"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="11.634765625" x="0.0" y="0.0">5</y:NodeLabel>
+              <y:State autoResize="true" closed="true" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n4:">
+        <node id="n4::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="819.0" x="-879.8048421052633" y="743.9375"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="707.916015625" x="55.5419921875" y="10.03125">-s 100.64.10.5/32 -m comment --comment "zerbytes-live-proj-s3/minio-0-exporter:http-metrics" -j KUBE-MARK-MASQ
+Mark traffic for masquerade when the source IP is the same Service Endpoint<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n4::n1">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="898.3903157894733" x="-919.5" y="834.6875"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="895.439453125" x="1.475431332236667" y="17.015625">-p tcp -m comment --comment "NAMESPACE/SERVICE_NAME:SERVICE_PORT_NAME" -m tcp -j DNAT --to-destination 100.64.10.5:TARGET_POD_PORT<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n5" yfiles.foldertype="group">
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="181.96875" width="1055.25" x="-107.625" y="499.0"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="193.84375" x="0.0" y="0.0">KUBE-SVC-ABCDEFGHIJKLMNOP</y:NodeLabel>
+              <y:State autoResize="true" closed="false" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="50.0" width="50.0" x="-107.625" y="499.0"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="11.634765625" x="0.0" y="0.0">5</y:NodeLabel>
+              <y:State autoResize="true" closed="true" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n5:">
+        <node id="n5::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="1025.25" x="-92.625" y="613.96875"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="685.837890625" x="169.7060546875" y="17.015625">-m comment --comment "zerbytes-live-proj-s3/minio-0-exporter:http-metrics" -j KUBE-SEP-ZYXWVUTSRQPOMNLK<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n5::n1">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="1025.25" x="-92.625" y="531.96875"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1025.25" x="0.0" y="17.015625">-m comment --comment "NAMESPACE/SERVICE_NAME:SERVICE_PORT_NAME" -m statistic --mode random --probability 0.50000000000 -j KUBE-SEP-ABCDEFGHIJKLMNOP<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n6" yfiles.foldertype="group">
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="99.96875" width="424.5" x="1215.75" y="310.015625"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="119.3359375" x="0.0" y="0.0">KUBE-MARK-MASQ </y:NodeLabel>
+              <y:State autoResize="true" closed="false" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="50.0" width="50.0" x="1428.5" y="245.0"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="11.634765625" x="0.0" y="0.0">5</y:NodeLabel>
+              <y:State autoResize="true" closed="true" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n6:">
+        <node id="n6::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="394.5" x="1230.75" y="342.984375"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="214.193359375" x="90.1533203125" y="17.015625">-j MARK --set-xmark 0x4000/0x400<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n7" yfiles.foldertype="group">
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="99.96875" width="501.0" x="169.5" y="121.03125"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="82.8671875" x="0.0" y="0.0">PREROUTING</y:NodeLabel>
+              <y:State autoResize="true" closed="false" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="50.0" width="50.0" x="-107.0" y="121.03125"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="11.634765625" x="0.0" y="0.0">5</y:NodeLabel>
+              <y:State autoResize="true" closed="true" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n7:">
+        <node id="n7::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="471.0" x="184.5" y="154.0"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="436.10546875" x="17.447265625" y="17.015625">-m comment --comment "kubernetes service portals" -j KUBE-SERVICES<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n8" yfiles.foldertype="group">
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="189.96875" width="1120.169921875" x="-140.0849609375" y="265.015625"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="99.66015625" x="0.0" y="0.0">KUBE-SERVICES</y:NodeLabel>
+              <y:State autoResize="true" closed="false" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="50.0" width="50.0" x="-107.0" y="265.015625"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="11.634765625" x="0.0" y="0.0">5</y:NodeLabel>
+              <y:State autoResize="true" closed="true" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n8:">
+        <node id="n8::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="1048.0" x="-104.0" y="297.984375"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1090.169921875" x="-21.0849609375" y="10.03125">! -s POD_CIDR/13 -d SERVICE_IP/32 -p tcp -m comment --comment "NAMESPACE/SERVICE_NAME:SERVICE_PORT_NAME cluster IP" -m tcp --dport SERVICE_PORT -j KUBE-MARK-MASQ
+Useful when using `hostNetwork: true` or accessing a Service IP from a node directly<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n8::n1">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="1048.0" x="-104.0" y="387.984375"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1060.92578125" x="-6.462890625" y="17.015625">-d SERVICE_IP/32 -p tcp -m comment --comment "NAMESPACE/SERVICE_NAME:SERVICE_PORT_NAME cluster IP" -m tcp --dport SERVICE_PORT -j KUBE-SVC-ABCDEFGHIJKLMNOP<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n9" yfiles.foldertype="group">
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="99.96875" width="756.0" x="42.0" y="1054.984375"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="128.13671875" x="0.0" y="0.0">KUBE-POSTROUTING</y:NodeLabel>
+              <y:State autoResize="true" closed="false" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+            <y:GenericGroupNode configuration="DemoGroup">
+              <y:Geometry height="50.0" width="50.0" x="42.0" y="1024.984375"/>
+              <y:Fill color="#68B0E3" color2="#3C679B" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="tl" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="11.634765625" x="0.0" y="0.0">5</y:NodeLabel>
+              <y:State autoResize="true" closed="true" closedHeight="50.0" closedWidth="50.0"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GenericGroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n9:">
+        <node id="n9::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="52.0" width="726.0" x="57.0" y="1087.953125"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="710.1484375" x="7.92578125" y="10.03125">-m comment --comment "kubernetes service traffic requiring SNAT" -m mark --mark 0x4000/0x4000 -j MASQUERADE
+If traffic was marked with 0x4000/0x400 (e.g. KUBE-MARK-MASQ), masquerade it now<y:LabelModel>
+                  <y:SmartNodeLabelModel distance="4.0"/>
+                </y:LabelModel>
+                <y:ModelParameter>
+                  <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+                </y:ModelParameter>
+              </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <edge id="e0" source="n0" target="n7::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n7::n0" target="n8::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="201.361328125" x="-130.6806640625" y="37.0078125">1. Jump to KUBE-SERVICES chain<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="n8::e0" source="n8::n0" target="n8::n1">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="224.1953125" x="-142.09765625" y="10.015625">2.b. Doesn't match rule (fallthrough)<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e2" source="n8::n0" target="n6::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="510.00176842105293" sy="-12.715334157894517" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="107.751953125" x="92.93870796163696" y="-22.1701258955909">2.a. Matches rule<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="left" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e3" source="n8::n1" target="n5::n1">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="259.234375" x="-159.6171875" y="37.0078125">3. Jump to KUBE-SVC-ABCDEFGHIJKLMNOP<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="n4::e0" source="n4::n0" target="n4::n1">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="157.17578125" x="-108.58789264237271" y="10.390625">5.c. Continue to next rule<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e4" source="n4::n1" target="n2::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="-270.0" y="960.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="804.150390625" x="-509.99286001643" y="97.0574944372072">6. After other iptables rules have been "executed" in the PREROUTING chain, the traffic is send through the nat POSTROUTING table.<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="142.48124923218884" distanceToCenter="true" position="right" ratio="-48.667771264431636" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="n3::e0" source="n3::n0" target="n3::n1">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="157.17578125" x="-108.587890625" y="10.390625">5.c. Continue to next rule<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e5" source="n3::n1" target="n2::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="1230.0" y="930.0"/>
+            <y:Point x="1050.0" y="960.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="804.150390625" x="-323.3038024660932" y="84.29055723568365">6. After other iptables rules have been "executed" in the PREROUTING chain, the traffic is send through the nat POSTROUTING table.<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="55.07084556406703" distanceToCenter="true" position="left" ratio="-66.95521538156639" segment="1"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e6" source="n5::n0" target="n3::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="1.1368683772161603E-13" tx="0.0" ty="0.0">
+            <y:Point x="660.0" y="750.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="76.37543555232423" y="67.2862245836775">
+            <y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n5::n1" target="n4::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="132.36734210526333" ty="-7.1875">
+            <y:Point x="-180.0" y="570.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="347.013671875" x="-252.85064098961777" y="6.765644630847987">4.a. On random match, go to first Service Endpoint chain<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="left" ratio="0.8416723046673869" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="n5::e0" source="n5::n1" target="n5::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="506.130859375" x="-321.89196721776625" y="6.015625">4.b. Didn't match the random factor, "fallback rule" to second service endpoint/Pod<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="68.82653753026625" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e8" source="n4::n0" target="n6::n0">
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="-139.50765789473667" sy="-13.4375" tx="0.0" ty="0.0">
+            <y:Point x="-270.0" y="360.0"/>
+            <y:Point x="-180.0" y="180.0"/>
+            <y:Point x="390.0" y="-90.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="228.390625" x="386.58593630568384" y="-611.5246383631364">5.a. Jump to KUBE-MARK-MASQ chain<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="81.34382348317817" distanceToCenter="true" position="center" ratio="0.14303310251682463" segment="2"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e9" source="n6::n0" target="n8::n1">
+      <data key="d9"/>
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="182.51171875" x="-234.630859375" y="27.446161454172568">2.a. Return after MARK target<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="left" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e10" source="n3::n0" target="n6::n0">
+      <data key="d9"/>
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-17.11974736842103" ty="-2.4985594210522777"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="228.390625" x="-163.8336304186821" y="-188.2260526315788">5.a. Jump to KUBE-MARK-MASQ chain<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="117.25551102107478" distanceToCenter="true" position="left" ratio="0.47020793256582155" segment="-1"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e11" source="n6::n0" target="n3::n0">
+      <data key="d9"/>
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="215.50572631578962" ty="5.032401105263489"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="178.9609375" x="33.7564132413263" y="158.9158289473694">5.b Return after MARK target<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="112.50231021355596" distanceToCenter="true" position="left" ratio="0.48969044803299044" segment="-1"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e12" source="n4::n1" target="n6::n0">
+      <data key="d9"/>
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="-429.69515789473667" sy="-10.4375" tx="0.0" ty="0.0">
+            <y:Point x="-120.0" y="-389.9999999999999"/>
+            <y:Point x="420.0" y="-180.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="standard" target="none"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="178.9609375" x="382.7522564974969" y="-587.8525126631946">5.b Return after MARK target<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="6.283185307179586" distance="91.8064025150209" distanceToCenter="true" position="right" ratio="0.48620629641610785" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e13" source="n2::n0" target="n9::n0">
+      <data key="d9"/>
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="229.837890625" x="-144.9189453125" y="37.5">7. Jump to KUBE-POSTROUTING chain<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e14" source="n9::n0" target="n1">
+      <data key="d9"/>
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="329.1953125" x="-194.59765625" y="21.015625">8. Traffic has been processed by the Kubernetes rules<y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+        </y:BezierEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d7">
+    <y:Resources/>
+  </data>
+</graphml>
