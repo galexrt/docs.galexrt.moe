@@ -23,6 +23,18 @@ find -name '*.rar' -exec sh -c 'mkdir "${1%.*}"; unrar e "$1" "${1%.*}"' _ {} \;
 find -name '*.7z' -exec sh -c 'mkdir "${1%.*}"; 7z x "$1" -o"${1%.*}"' _ {} \;
 ```
 
+### Extrat all '*.tar' files into a directory named after the tar's filename
+
+```shell
+find -name '*.tar' -exec sh -c 'mkdir -p "${1%.*}"; tar -C "${1%.*}" -xvf "$1"' _ {} \;
+```
+
+### Extrat all '*.tar.gz' files into a directory named after the tar's filename
+
+```shell
+find -name '*.tar.gz' -or -name '*.tgz' -exec sh -c 'mkdir -p "${1%.*}"; tar -C "${1%.*}" -xvzf "$1"' _ {} \;
+```
+
 ## Documents
 
 ### Convert PDFs to PNGs (each page is its own image)
