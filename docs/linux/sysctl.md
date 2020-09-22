@@ -7,7 +7,7 @@ See [GitHub Gist `90-edenmal-custom.conf`](https://gist.github.com/galexrt/8faa4
 
 The sysctl can be easily using the following command:
 ```console
-curl -L gist.githubusercontent.com/galexrt/8faa48a05bab303ec922bd89e8f7adc5/raw/90-edenmal-custom.conf -o /etc/sysctl.d/90-edenmal-custom.conf
+curl -L https://gist.githubusercontent.com/galexrt/8faa48a05bab303ec922bd89e8f7adc5/raw/90-edenmal-custom.conf -o /etc/sysctl.d/90-edenmal-custom.conf
 sysctl --system
 ```
 

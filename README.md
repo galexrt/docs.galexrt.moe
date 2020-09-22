@@ -1,1 +1,1 @@
-# docs.edenmal.moe
+# docs.galexrt.moe
