@@ -1,5 +1,5 @@
 ---
-title: "Site Notice"
+title: "Impressum"
 url: "/site-notice"
 toc: true
 ---

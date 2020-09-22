@@ -3,7 +3,7 @@ repo_url: https://github.com/galexrt/docs.galexrt.moe
 site_author: Alexander Trost
 site_description: ""
 use_directory_urls: true
-copyright: '<a href="/site-notice/">Site Notice</a> | <a href="/privacy-policy/">Privacy Policy</a> | Copyright (c) Alexander Trost 2020'
+copyright: '<a href="/site-notice/">Impressum</a> | <a href="/privacy-policy/">Privacy Policy</a> | Copyright (c) Alexander Trost 2020'
 theme:
   name: material
   font: false
