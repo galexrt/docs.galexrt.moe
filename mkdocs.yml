@@ -19,6 +19,7 @@ theme:
     - instant
     - navigation.expand
     - tabs
+    - navigation.tabs
 plugins:
   - search
   # Removed in material mkdocs 6.0
