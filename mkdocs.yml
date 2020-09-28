@@ -21,8 +21,10 @@ theme:
     - tabs
 plugins:
   - search
-  - awesome-pages
-  - git-revision-date-localized
+  # Removed in material mkdocs 6.0
+  # See https://squidfunk.github.io/mkdocs-material/deprecations/#bundled-plugins
+  #- awesome-pages
+  #- git-revision-date-localized
   - minify:
       minify_html: true
       minify_js: true
