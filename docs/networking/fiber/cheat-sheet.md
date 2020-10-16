@@ -8,9 +8,8 @@ date: 2019-08-16
 
 As long as they support one of the T-Base standards (e.g., 1000T-Base), they should be able to be used like a "normal RJ45 ethernet network" port.
 
-{{< panel title="T-Base standard" icon="fas fa-info-circle" border="solid #0000ff 2px" >}}
-For the SFP / SFP+ to work with, e.g, 10 / 100 / 1000, each of the nT-Base standards must be "implemented" in them.
-{{</ panel >}}
+!!! info "T-Base standard"
+    For the SFP / SFP+ to work with, e.g, 10 / 100 / 1000, each of the nT-Base standards must be "implemented" in them.
 
 ## Simplex and Multimode fiber cables and transceivers
 
