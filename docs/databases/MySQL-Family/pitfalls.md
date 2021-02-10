@@ -20,3 +20,17 @@ I also need to give a shoutout to the people with which I reflected the issue an
 ## Replication User Password Character Limit
 
 The password for a replication user must be a maximum of `32` characters long.
+
+## MySQL Memory / Storage Size Suffixes
+
+**TL;DR** The suffixes are in "Bytes". E.g., 16M = 16777216 Bytes.
+
+>
+```console
+mysql --max_allowed_packet=16777216
+mysql --max_allowed_packet=16M
+```
+>
+> The first command specifies the value in bytes. The second specifies the value in megabytes. For variables that take a numeric value, the value can be given with a suffix of K, M, or G to indicate a multiplier of 1024, 10242 or 10243. (For example, when used to set max_allowed_packet, the suffixes indicate units of kilobytes, megabytes, or gigabytes.) As of MySQL 8.0.14, a suffix can also be T, P, and E to indicate a multiplier of 10244, 10245 or 10246. Suffix letters can be uppercase or lowercase.
+
+Quoted from: [MySQL 8.0 Reference Manual - 4.2.2.5 Using Options to Set Program Variables](https://dev.mysql.com/doc/refman/8.0/en/program-variables.html)
