@@ -1,5 +1,5 @@
 ---
-title: "Recommended Requirements"
+title: "System Requirements"
 date: 2019-08-20
 ---
 

@@ -3,7 +3,7 @@ repo_url: https://github.com/galexrt/docs.galexrt.moe
 site_author: Alexander Trost
 site_description: "galexrt tips, tricks and cheat sheets documentation."
 use_directory_urls: true
-copyright: '<a href="/site-notice/">Impressum</a> | <a href="/privacy-policy/">Privacy Policy</a> | Copyright (c) Alexander Trost 2020'
+copyright: '<a href="/site-notice/">Impressum</a> | <a href="/privacy-policy/">Privacy Policy</a> | This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International License</a>'
 theme:
   name: material
   font: false

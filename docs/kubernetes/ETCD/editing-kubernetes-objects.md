@@ -2,6 +2,7 @@
 title: "Editing Kubernetes Objects"
 date: 2019-03-22
 ---
+
 !!! danger
     You should be 100% sure what you are doing and should have at least a snapshot of the etcd you want to edit as things can and will possibly go wrong!
 

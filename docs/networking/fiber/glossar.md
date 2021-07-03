@@ -7,7 +7,9 @@ date: 2019-08-16
 
 **Mode**: Singlemode.
 
-Bi-Directional, only one line (Ader?) needed.
+Bi-Directional, only one line / cable core needed.
+
+"Only one side can sent at once", used for longer distances.
 
 TODO
 
@@ -15,12 +17,14 @@ TODO
 
 **Mode**: Multimode.
 
+"Two lines / cable cores each for 'one way' of data", used for "short" distances.
+
 TODO
 
 ## Simplex vs Duplex fiber
 
-* Simplex cable are consisiting of a single cable strand.
-* Duplex cable are consisiting of two cable strands ("glued" together).
+* Simplex cable are consisting of a single cable strand.
+* Duplex cable are consisting of two cable strands ("glued" together).
 
 ## Singlemode vs Multimode
 

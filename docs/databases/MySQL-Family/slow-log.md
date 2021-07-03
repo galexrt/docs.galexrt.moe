@@ -15,8 +15,8 @@ SET GLOBAL slow_query_log = 1;
 
 ## Disable Slow Query Log
 
-It is important to log slow queries, so set it to something like `10` seconds.
+It is important to log slow queries, so set it to something like `3` seconds.
 
 ```sql
-SET GLOBAL long_query_time = 10;
+SET GLOBAL long_query_time = 3;
 ```

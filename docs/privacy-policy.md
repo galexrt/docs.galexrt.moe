@@ -16,13 +16,13 @@ The Site Notice / Impressum can be found here: [Site Notice / Impressum page](/s
 
 #### General information
 
-The following information will provide you with an easy to navigate overview of what will happen with your personal data when you visit this website. The term “personal data” comprises all data that can be used to personally identify you. For detailed information about the subject matter of data protection, please consult our Data Protection Declaration, which we have included beneath this copy.
+The following information will provide you with an easy to navigate overview of what will happen with your personal data when you visit this website. The term "personal data" comprises all data that can be used to personally identify you. For detailed information about the subject matter of data protection, please consult our Data Protection Declaration, which we have included beneath this copy.
 
 #### Data recording on this website
 
-##### Who is the responsible party for the recording of data on this website (i.e. the “controller”)?
+##### Who is the responsible party for the recording of data on this website (i.e. the "controller")?
 
-The data on this website is processed by the operator of the website, whose contact information is available under section “Information Required by Law” on this website.
+The data on this website is processed by the operator of the website, whose contact information is available under section "Information Required by Law" on this website.
 
 ##### How do we record your data?
 
@@ -38,7 +38,7 @@ A portion of the information is generated to guarantee the error free provision 
 
 You have the right to receive information about the source, recipients and purposes of your archived personal data at any time without having to pay a fee for such disclosures. You also have the right to demand that your data are rectified or eradicated. If you have consented to data processing, you have the option to revoke this consent at any time, which shall affect all future data processing. Moreover, you have the right to demand that the processing of your data be restricted under certain circumstances. Furthermore, you have the right to log a complaint with the competent supervising agency.
 
-Please do not hesitate to contact us at any time under the address disclosed in section “Information Required by Law” on this website if you have questions about this or any other data protection related issues.
+Please do not hesitate to contact us at any time under the address disclosed in section "Information Required by Law" on this website if you have questions about this or any other data protection related issues.
 
 #### Analysis tools and tools provided by third parties
 
@@ -79,7 +79,7 @@ In order to guarantee processing in compliance with data protection regulations,
 
 #### Cloudflare
 
-We use the “Cloudflare” service provided by Cloudflare Inc., 101 Townsend St., San Francisco, CA 94107, USA. (hereinafter referred to as “Cloudflare”).
+We use the "Cloudflare" service provided by Cloudflare Inc., 101 Townsend St., San Francisco, CA 94107, USA. (hereinafter referred to as "Cloudflare").
 
 Cloudflare offers a content delivery network with DNS that is available worldwide. As a result, the information transfer that occurs between your browser and our website is technically routed via Cloudflare’s network. This enables Cloudflare to analyze data transactions between your browser and our website and to work as a filter between our servers and potentially malicious data traffic from the Internet. In this context, Cloudflare may also use cookies or other technologies deployed to recognize Internet users, which shall, however, only be used for the herein described purpose.
 
@@ -97,7 +97,7 @@ Whenever you use this website, a variety of personal information will be collect
 
 We herewith advise you that the transmission of data via the Internet (i.e. through e-mail communications) may be prone to security gaps. It is not possible to completely protect data against third-party access.
 
-#### Information about the responsible party (referred to as the “controller” in the GDPR)
+#### Information about the responsible party (referred to as the "controller" in the GDPR)
 
 The data processing controller on this website is:
 
@@ -139,17 +139,17 @@ You have the right to demand that we hand over any data we automatically process
 
 #### SSL and/or TLS encryption
 
-For security reasons and to protect the transmission of confidential content, such as purchase orders or inquiries you submit to us as the website operator, this website uses either an SSL or a TLS encryption program. You can recognize an encrypted connection by checking whether the address line of the browser switches from “http://” to “https://” and also by the appearance of the lock icon in the browser line.
+For security reasons and to protect the transmission of confidential content, such as purchase orders or inquiries you submit to us as the website operator, this website uses either an SSL or a TLS encryption program. You can recognize an encrypted connection by checking whether the address line of the browser switches from "http://" to "https://" and also by the appearance of the lock icon in the browser line.
 
 If the SSL or TLS encryption is activated, data you transmit to us cannot be read by third parties.
 
 #### Information about, rectification and eradication of data
 
-Within the scope of the applicable statutory provisions, you have the right to at any time demand information about your archived personal data, their source and recipients as well as the purpose of the processing of your data. You may also have a right to have your data rectified or eradicated. If you have questions about this subject matter or any other questions about personal data, please do not hesitate to contact us at any time at the address provided in section “Information Required by Law.”
+Within the scope of the applicable statutory provisions, you have the right to at any time demand information about your archived personal data, their source and recipients as well as the purpose of the processing of your data. You may also have a right to have your data rectified or eradicated. If you have questions about this subject matter or any other questions about personal data, please do not hesitate to contact us at any time at the address provided in section "Information Required by Law."
 
 #### Right to demand processing restrictions
 
-You have the right to demand the imposition of restrictions as far as the processing of your personal data is concerned. To do so, you may contact us at any time at the address provided in section “Information Required by Law.” The right to demand restriction of processing applies in the following cases:
+You have the right to demand the imposition of restrictions as far as the processing of your personal data is concerned. To do so, you may contact us at any time at the address provided in section "Information Required by Law." The right to demand restriction of processing applies in the following cases:
 
 * In the event that you should dispute the correctness of your data archived by us, we will usually need some time to verify this claim. During the time that this investigation is ongoing, you have the right to demand that we restrict the processing of your personal data.
 * If the processing of your personal data was/is conducted in an unlawful manner, you have the option to demand the restriction of the processing of your data in lieu of demanding the eradication of this data.
@@ -162,7 +162,7 @@ If you have restricted the processing of your personal data, these data – with
 
 #### Cookies
 
-Our websites and pages use what the industry refers to as “cookies.” Cookies are small text files that do not cause any damage to your device. They are either stored temporarily for the duration of a session (session cookies) or they are permanently archived on your device (permanent cookies). Session cookies are automatically deleted once you terminate your visit. Permanent cookies remain archived on your device until you actively delete them or they are automatically eradicated by your web browser.
+Our websites and pages use what the industry refers to as "cookies." Cookies are small text files that do not cause any damage to your device. They are either stored temporarily for the duration of a session (session cookies) or they are permanently archived on your device (permanent cookies). Session cookies are automatically deleted once you terminate your visit. Permanent cookies remain archived on your device until you actively delete them or they are automatically eradicated by your web browser.
 
 In some cases, it is possible that third-party cookies are stored on your device once you enter our site (third-party cookies). These cookies enable you or us to take advantage of certain services offered by the third party (e.g. cookies for the processing of payment services).
 
@@ -276,7 +276,7 @@ Um die datenschutzkonforme Verarbeitung zu gewährleisten, haben wir einen Vertr
 
 #### Cloudflare
 
-Wir nutzen den Service „Cloudflare“. Anbieter ist die Cloudflare Inc., 101 Townsend St., San Francisco, CA 94107, USA (im Folgenden „Cloudflare”).
+Wir nutzen den Service „Cloudflare". Anbieter ist die Cloudflare Inc., 101 Townsend St., San Francisco, CA 94107, USA (im Folgenden „Cloudflare").
 
 Cloudflare bietet ein weltweit verteiltes Content Delivery Network mit DNS an. Dabei wird technisch der Informationstransfer zwischen Ihrem Browser und unserer Website über das Netzwerk von Cloudflare geleitet. Das versetzt Cloudflare in die Lage, den Datenverkehr zwischen Ihrem Browser und unserer Website zu analysieren und als Filter zwischen unseren Servern und potenziell bösartigem Datenverkehr aus dem Internet zu dienen. Hierbei kann Cloudflare auch Cookies oder sonstige Technologien zur Wiedererkennung von Internetnutzern einsetzen, die jedoch allein zum hier beschriebenen Zweck verwendet werden.
 
@@ -336,7 +336,7 @@ Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erf
 
 #### SSL- bzw. TLS-Verschlüsselung
 
-Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
 
 Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
 
@@ -359,7 +359,7 @@ Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, d�
 
 #### Cookies
 
-Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.
+Unsere Internetseiten verwenden so genannte „Cookies". Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.
 
 Teilweise können auch Cookies von Drittunternehmen auf Ihrem Endgerät gespeichert werden, wenn Sie unsere Seite betreten (Third-Party-Cookies). Diese ermöglichen uns oder Ihnen die Nutzung bestimmter Dienstleistungen des Drittunternehmens (z.B. Cookies zur Abwicklung von Zahlungsdienstleistungen).
 

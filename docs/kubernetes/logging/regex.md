@@ -3,6 +3,13 @@ title: "Regex"
 date: 2019-06-14
 ---
 
+!!! info
+    In general make sure to forward the audit logs to your log store of choice.
+
+    Kubernetes docs: [https://kubernetes.io/docs/tasks/debug-application-cluster/audit/](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
+
+***
+
 Some neat regex to parse certain messages from Kubernetes logs.
 
 ## `RBAC DENY` Messages

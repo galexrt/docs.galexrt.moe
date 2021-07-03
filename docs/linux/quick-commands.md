@@ -35,6 +35,20 @@ find -name '*.tar' -exec sh -c 'mkdir -p "${1%.*}"; tar -C "${1%.*}" -xvf "$1"' 
 find -name '*.tar.gz' -or -name '*.tgz' -exec sh -c 'mkdir -p "${1%.*}"; tar -C "${1%.*}" -xvzf "$1"' _ {} \;
 ```
 
+## Music
+
+### Convert all FLAC to MP3 (same directory)
+
+```shell
+find -name "*.flac" -print | parallel -j 14 ffmpeg -i {} -acodec libmp3lame -ab 192k {.}.mp3 \;
+```
+
+### Convert all OGG to FLAC (same directory)
+
+```shell
+find -name "*.ogg" -print | parallel -j 14 ffmpeg -i {} -c:a flac {.}.flac \;
+```
+
 ## Documents
 
 ### Convert PDFs to PNGs (each page is its own image)
