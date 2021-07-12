@@ -102,8 +102,8 @@ We herewith advise you that the transmission of data via the Internet (i.e. thro
 The data processing controller on this website is:
 
 Alexander Trost
-Kelterstr. 4/1
-75196 Remchingen
+Postfach 11
+75196 Kämpfelbach
 Germany
 
 Phone: +497232370228

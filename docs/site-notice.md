@@ -16,8 +16,8 @@ The Privacy Policy / Datenschutz­erklärung can be found here: [Privacy Policy 
 
 <address>
 Alexander Trost<br />
-Kelterstr. 4/1<br />
-75196 Remchingen<br />
+Postfach 11<br />
+75196 Kämpfelbach<br />
 Germany
 </address>
 
