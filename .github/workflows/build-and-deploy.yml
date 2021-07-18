@@ -7,7 +7,10 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     container:
-      image: "squidfunk/mkdocs-material:latest"
+      image: "ghcr.io/galexrt/mkdocs-material-insiders"
+      credentials:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.GHCR_TOKEN }}
     steps:
       - uses: actions/checkout@v2
         with:
