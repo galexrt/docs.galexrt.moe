@@ -26,6 +26,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    - content.tabs.link
     - instant
     - navigation.expand
     - navigation.indexes
@@ -53,13 +54,15 @@ plugins:
   - redirects:
       redirect_maps: {}
 markdown_extensions:
+  - admonition
   - attr_list
+  - def_list
+  - footnotes
   - meta
   - toc:
       permalink: true
   - tables
   - nl2br
-  - admonition
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -68,16 +71,15 @@ markdown_extensions:
       use_pygments: true
       linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.tasklist
   - pymdownx.keys
   - pymdownx.magiclink
   - pymdownx.mark
-  # Style is broken
-  #- pymdownx.progressbar
   - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid-experimental
           format: !!python/name:pymdownx.superfences.fence_code_format
-  #- pymdownx.tabbed
+  - pymdownx.tabbed
