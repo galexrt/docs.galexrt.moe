@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.galexrt.moe/databases/</loc>
+         <lastmod>2021-07-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.galexrt.moe/databases/MySQL-Family/cheat-sheet/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
@@ -256,7 +261,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.galexrt.moe/storage/ceph/architecture/</loc>
+         <loc>https://docs.galexrt.moe/storage/ceph/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -272,6 +277,11 @@
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/gluster/common-issues/</loc>
+         <lastmod>2021-07-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.galexrt.moe/storage/rook/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
