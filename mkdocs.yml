@@ -1,4 +1,5 @@
 site_name: galexrt Docs
+site_url: 'https://docs.galexrt.moe'
 repo_url: https://github.com/galexrt/docs.galexrt.moe
 site_author: Alexander Trost
 site_description: "galexrt tips, tricks and cheat sheets documentation."
