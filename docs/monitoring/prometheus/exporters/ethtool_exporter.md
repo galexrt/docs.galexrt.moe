@@ -1,6 +1,5 @@
 ---
 title: "ethtool_exporter by Showmax"
-date: 2018-05-16
 ---
 
 ## Info

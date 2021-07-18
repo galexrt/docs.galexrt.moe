@@ -1,6 +1,5 @@
 ---
 title: "Cheat Sheet"
-date: 2019-06-16
 ---
 
 ## Re-Create the `debian-sys-maint` User

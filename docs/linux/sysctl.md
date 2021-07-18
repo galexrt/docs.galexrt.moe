@@ -1,6 +1,5 @@
 ---
 title: "sysctl"
-date: 2020-01-25
 ---
 
 See [GitHub Gist `90-edenmal-custom.conf`](https://gist.github.com/galexrt/8faa48a05bab303ec922bd89e8f7adc5) for more information on the used `sysctl` settings / values.

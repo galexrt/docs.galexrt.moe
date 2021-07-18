@@ -1,6 +1,5 @@
 ---
 title: "Editing Kubernetes Objects"
-date: 2019-03-22
 ---
 
 !!! danger

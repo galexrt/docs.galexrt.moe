@@ -1,6 +1,5 @@
 ---
 title: "CRI-O"
-date: 2020-08-28
 ---
 
 ## Default CNI configs cause Cluster Network Issues

@@ -1,6 +1,5 @@
 ---
 title: "Common Issues"
-date: 2020-08-28
 ---
 
 ## No File Locking

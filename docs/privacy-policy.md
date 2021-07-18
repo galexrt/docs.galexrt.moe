@@ -1,7 +1,8 @@
 ---
 title: "Privacy Policy"
 url: "/privacy-policy"
-toc: true
+hide:
+  - navigation
 ---
 
 The Site Notice / Impressum can be found here: [Site Notice / Impressum page](/site-notice/).

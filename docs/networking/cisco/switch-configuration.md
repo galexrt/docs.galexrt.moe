@@ -1,6 +1,5 @@
 ---
 title: "Switch Configuration"
-date: 2018-05-24
 ---
 
 ## Basic Commands

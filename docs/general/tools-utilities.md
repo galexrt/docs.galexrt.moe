@@ -1,6 +1,5 @@
 ---
 title: "Projects, Tools and Utilites"
-date: 2019-06-16
 ---
 
 ## Network

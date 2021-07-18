@@ -1,6 +1,5 @@
 ---
 title: "mdadm"
-date: 2020-01-31
 ---
 
 !!! note

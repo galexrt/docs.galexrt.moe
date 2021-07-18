@@ -1,6 +1,5 @@
 ---
 title: "Online Tools"
-date: 2019-06-29
 ---
 
 ## Diagrams

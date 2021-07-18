@@ -1,6 +1,5 @@
 ---
 title: "Harbor Registry"
-date: 2020-08-28
 ---
 
 ## Garbage Collection (GC) not working with non-AWS S3 storage?

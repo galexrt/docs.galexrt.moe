@@ -1,6 +1,5 @@
 ---
 title: "Components"
-date: 2018-05-16
 ---
 
 Infrastructure / Cluster components should be monitored separately from your applications.
@@ -135,11 +134,11 @@ For other SDNs, e.g., OpenVSwitch you may need to use an "external" exporter whe
 
 #### node_exporter
 
-See [Monitoring/Prometheus/Exporters - node_exporter](../../monitoring/prometheus/exporters/node_exporter.md" >}}).
+See [Monitoring/Prometheus/Exporters - node_exporter](../../monitoring/prometheus/exporters/node_exporter.md).
 
 #### ethtool_exporter
 
-See [Monitoring/Prometheus/Exporters - ethtool_exporter](../..//monitoring/prometheus/exporters/ethtool_exporter.md).
+See [Monitoring/Prometheus/Exporters - ethtool_exporter](../../monitoring/prometheus/exporters/ethtool_exporter.md).
 
 ## Additional In-Cluster Components
 

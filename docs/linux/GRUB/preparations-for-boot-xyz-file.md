@@ -1,6 +1,5 @@
 ---
 title: "Preparations for 'Boot XYZ FIle'"
-date: 2020-08-28
 ---
 
 !!! danger

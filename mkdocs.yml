@@ -11,16 +11,33 @@ theme:
   favicon: images/favicon.png
   logo: images/favicon.png
   palette:
-    scheme: 'slate'
-    primary: 'deep purple'
-    accent: 'lime'
+    - scheme: 'default'
+      primary: 'deep purple'
+      accent: 'deep orange'
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: 'slate'
+      primary: 'deep purple'
+      accent: 'red'
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   icon:
     repo: fontawesome/brands/github
   features:
     - instant
     - navigation.expand
-    - tabs
+    - navigation.indexes
     - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - tabs
+extra_css:
+  - stylesheets/extra.css
 plugins:
   - search
   # Removed in material mkdocs 6.0
@@ -44,6 +61,9 @@ markdown_extensions:
   - nl2br
   - admonition
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
       use_pygments: true
       linenums: true
@@ -55,5 +75,9 @@ markdown_extensions:
   # Style is broken
   #- pymdownx.progressbar
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
   #- pymdownx.tabbed

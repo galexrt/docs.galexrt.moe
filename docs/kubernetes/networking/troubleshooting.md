@@ -1,6 +1,5 @@
 ---
 title: "Troubleshooting"
-date: 2018-05-16
 ---
 
 ## General connectivity test

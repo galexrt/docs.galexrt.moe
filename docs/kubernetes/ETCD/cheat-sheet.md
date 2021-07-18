@@ -1,6 +1,5 @@
 ---
 title: "Cheat Sheet"
-date: 2019-06-22
 ---
 
 ## Check ETCD performance "status" quickly

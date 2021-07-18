@@ -1,6 +1,5 @@
 ---
 title: "Snapshots: Save & Restore"
-date: 2019-03-22
 ---
 
 !!! warning

@@ -1,6 +1,5 @@
 ---
 title: "Slow Log"
-date: 2020-92-13
 ---
 
 ## Enable Slow Query Log to File

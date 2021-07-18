@@ -1,6 +1,5 @@
 ---
 title: "Cluster Components Upgrade Order"
-date: 2019-06-28
 ---
 
 The following is a recommended Upgrade Order for the Components of a Kubernetes cluster:

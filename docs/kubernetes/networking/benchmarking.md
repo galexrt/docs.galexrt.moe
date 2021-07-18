@@ -1,6 +1,5 @@
 ---
 title: "Benchmarking"
-date: 2018-05-16
 ---
 
 ## Network

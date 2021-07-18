@@ -1,6 +1,5 @@
 ---
 title: "dellhw_exporter by galexrt"
-date: 2018-05-16
 ---
 
 * Website / Source Code: https://github.com/galexrt/dellhw_exporter

@@ -1,6 +1,5 @@
 ---
 title: "node_exporter by Prometheus Project"
-date: 2018-05-16
 ---
 
 * Website / Source Code: https://github.com/prometheus/node_exporter

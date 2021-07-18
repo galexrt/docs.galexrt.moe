@@ -1,6 +1,5 @@
 ---
 title: "init_file: Run SQL file on startup"
-date: 2020-08-28
 ---
 
 Add the following paramter to the `[mysqld]` or `[mariadb]` section of your `my.cnf` file (depending on the OS, at `/etc/mysql/my.cnf`, `/etc/my.cnf`, other path):

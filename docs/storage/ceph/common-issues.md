@@ -1,6 +1,5 @@
 ---
 title: "Common Issues"
-date: 2019-03-23
 ---
 
 ## CephFS mount issues on Hosts

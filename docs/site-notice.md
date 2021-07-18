@@ -1,7 +1,8 @@
 ---
 title: "Impressum"
 url: "/site-notice"
-toc: true
+hide:
+  - navigation
 ---
 
 The Privacy Policy / Datenschutz­erklärung can be found here: [Privacy Policy / Datenschutz­erklärung page](/privacy-policy/).

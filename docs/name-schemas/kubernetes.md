@@ -1,6 +1,5 @@
 ---
 title: "Kubernetes Name Schemas"
-date: 2019-06-16
 ---
 
 ## Hostname Schema

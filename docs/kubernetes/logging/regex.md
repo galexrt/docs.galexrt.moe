@@ -1,6 +1,5 @@
 ---
 title: "Regex"
-date: 2019-06-14
 ---
 
 !!! info

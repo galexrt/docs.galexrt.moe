@@ -1,6 +1,5 @@
 ---
 title: "System Requirements"
-date: 2019-08-20
 ---
 
 !!! tip "Recommendations for Requirements"

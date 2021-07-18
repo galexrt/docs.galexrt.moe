@@ -1,6 +1,5 @@
 ---
 title: ".iso File"
-date: 2020-08-28
 ---
 
 !!! info

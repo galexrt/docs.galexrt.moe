@@ -1,6 +1,5 @@
 ---
 title: "Common Issues"
-date: 2019-08-28
 ---
 
 Be sure to checkout the [Rook Ceph Common Issues page](https://rook.io/docs/rook/v1.6/ceph-common-issues.html) and **that all prerequisites for the storage backend of your choice** are met!
@@ -22,6 +21,12 @@ This behavior is controlled by the `ROOK_ENABLE_DISCOVERY_DAEMON` located in the
 * You are on **(plain) bare metal** and / or simply have "some disks" installed /attached to your server(s), that you want to use for the Rook Ceph cluster.
 * If your cloud environment / provider does not provide PVCs with `volumeMode: Block`. Ceph requires block devices (Ceph's `filestore` is not available, through Rook, since a bunch of versions as `bluestore` is superior in certain ways).
 
+## Crash Collector Pods are `Pending` / `ContainerCreating`
+
+* Check the events of the Crash Collector Pod(s) using `kubectl describe pod POD_NAME`.
+* If the Pod(s) is waiting for a Secret from the Ceph MONs (keyring for each crash collector), you need to wait a bit longer as the Ceph Cluster is probably still being bootsraped / started up.
+* If they are stuck for more than 15-30 minutes, check the Rook Ceph Operator logs if it is stuck in the Ceph Cluster bootstrap / start up procedure.
+
 ## No `rook-ceph-mon-*` Pods are running
 
 1. First of all make sure your Kubernetes CNI is working fine! In what feels like 90% of the cases it is network related, e.g., some weird thing with the Kubernetes cluster CNI or other network environment issue.
@@ -31,7 +36,7 @@ This behavior is controlled by the `ROOK_ENABLE_DISCOVERY_DAEMON` located in the
 2. Does your environment fit all the prerequisites? Check top of page for the links to some of the prerequisites and / or consult the [Rook.io docs](https://rook.io/).
 3. Check the `rook-ceph-operator` Logs for any warnings, errors, etc.
 
-### Disk(s) / Partition(s) not used for Ceph
+## Disk(s) / Partition(s) not used for Ceph
 
 * Does section [When do you want to have `rook-discover-*` Pods / `ROOK_ENABLE_DISCOVERY_DAEMON: true`?](#when-do-you-want-to-have-rook-discover--pods--rook_enable_discovery_daemon-true) apply to you? If so, make sure the operator has the discovery daemon enabled in its (Pod) config!
 * Is the disk empty? No leftover partitions on it? Make sure it is either "empty", e.g., nulled by `shred`, `dd` or similar,
@@ -46,15 +51,42 @@ This behavior is controlled by the `ROOK_ENABLE_DISCOVERY_DAEMON` located in the
 * Was the disk previously used as a Ceph OSD?
     * Make sure to follow the teardown steps, but make sure to only remove the LVM stuff from that one disk and not from all, see [https://rook.io/docs/rook/v1.6/ceph-teardown.html#delete-the-data-on-hosts](https://rook.io/docs/rook/v1.6/ceph-teardown.html#delete-the-data-on-hosts).
 
-### A Pod can't mount its PersistentVolume after an "unclean" / "undrained" Node shutdown
+## A Pod can't mount its PersistentVolume after an "unclean" / "undrained" Node shutdown
 
 1. Check the events of the Pod using `kubectl describe pod POD_NAME`.
 2. Check the Node's `dmesg` logs.
 3. Check the kubelet logs for errors related to CSI connectivity and / or make sure the node can reach every other Kubernetes cluster node (at least the Rook Ceph cluster nodes (Ceph Mons, OSDs, MGRs, etc.)).
 4. Checkout the [CSI Common Issues - Rook Docs](https://rook.io/docs/rook/v1.6/ceph-csi-troubleshooting.html).
 
-### Ceph CSI: Provisioning, Mounting, Deletion or something doesn't work
+## Ceph CSI: Provisioning, Mounting, Deletion or something doesn't work
 
 Make sure you have checked out the [CSI Common Issues - Rook Docs](https://rook.io/docs/rook/v1.6/ceph-csi-troubleshooting.html).
 
 If you have some weird kernel and / or kubelet configuration, make sure Ceph CSI's config options in the Rook Ceph Operator config is correctly setup (e.g., `LIB_MODULES_DIR_PATH`, `ROOK_CSI_KUBELET_DIR_PATH`, `AGENT_MOUNTS`).
+
+## Can't run any Ceph Commands in the Toolbox / Ceph Commands timeout
+
+* Are your `rook-ceph-mon-*` Pods all in `Running` state?
+* Does a basic `ceph -s` work?
+* Is your `rook-ceph-mgr-*` Pod(s) running as well?
+* Check the `rook-ceph-mon-*` and `rook-ceph-mgr-*` logs for errors
+* Try deleteing the toolbox Pod, "maybe it is just a fluke in your Kubernetes cluster network / CNI.
+    * Also make sure you are using the latest Rook Ceph Toolbox YAML for the Rook Ceph version you are running on, see [](#rook-ceph-toolbox-pod-not-creating--stuck).
+* In case all these seem to indicate a loss of quorum, e.g., the `rook-ceph-mon-*` talk about `probing` for other mons only, you might need to follow the disaster recovery guide for your Rook Ceph version here: [Rook v1.6 Docs - Ceph Disaster Recovery - Restoring Mon Quorum](https://rook.io/docs/rook/v1.6/ceph-disaster-recovery.html#restoring-mon-quorum).
+
+## A MON Pod is running on a Node which is down
+
+* **DO NOT EDIT THE MON DEPLOYMENT!** A MON Deployment can't just be moved to another node without being failovered by the operator and / or if the MON is running using a PVC for its data.
+* As long as the operator is running the operator should see the mon being down and fail it over after a configurable timeout.
+    * Env var `ROOK_MON_OUT_TIMEOUT`, by default `600s` (10 minutes)
+
+## Remove / Replace a failed disk
+
+Checkout the official Ceph OSD Management guide from Rook here: [Rook v1.6 Docs - Ceph OSD Management](https://rook.io/docs/rook/v1.6/ceph-osd-mgmt.html).
+
+## Rook Ceph Toolbox Pod not Creating / Stuck
+
+* Make sure that you are not using an old version of the Rook Ceph Toolbox, grab the latest manifest here (make sure to switch to the `release-` branch of your Rook release): `https://github.com/rook/rook/blob/master/cluster/examples/kubernetes/ceph/toolbox.yaml`
+* The Rook Ceph Toolbox can only fully startup after a Ceph Cluster has at least passed the initial setup by the Rook Ceph operator.
+    * Monitor the Rook Ceph Operator logs for errors.
+* Check the events of the Toolbox Pod using `kubectl describe pod POD_NAME`.

@@ -1,6 +1,5 @@
 ---
 title: "Cheat Sheet"
-date: 2020-01-25
 ---
 ## Quick Run Snippets
 

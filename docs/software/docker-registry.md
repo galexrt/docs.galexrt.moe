@@ -1,6 +1,5 @@
 ---
 title: "Docker Registry"
-date: 2020-08-28
 ---
 
 ## Garbage Collection doesn't work with non AWS S3 stores

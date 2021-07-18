@@ -1,6 +1,5 @@
 ---
 title: "Quick Commands"
-date: 2018-05-31
 ---
 
 ## Archives

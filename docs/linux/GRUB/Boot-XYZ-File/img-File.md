@@ -1,6 +1,5 @@
 ---
 title: ".img File"
-date: 2020-08-28
 ---
 
 !!! info

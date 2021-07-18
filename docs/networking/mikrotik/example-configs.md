@@ -1,6 +1,5 @@
 ---
 title: "Example Configs"
-date: 2020-01-25
 ---
 
 ## VLANs + VLAN Ingress Filtering

@@ -1,6 +1,5 @@
 ---
 title: "Tips"
-date: 2020-08-28
 ---
 
 ## Multiple Exporter on one Server but only one port?

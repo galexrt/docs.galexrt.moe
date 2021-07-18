@@ -1,6 +1,5 @@
 ---
 title: "Pitfalls"
-date: 2020-92-13
 ---
 
 ## `mysql` CLI Console Password Character "Limit"

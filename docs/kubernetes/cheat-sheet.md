@@ -1,6 +1,5 @@
 ---
 title: "Cheat Sheet"
-date: 2018-05-16
 ---
 
 ## Quickly trigger Rolling Update of Deployment, StatefulSet, DaemonSet, etc

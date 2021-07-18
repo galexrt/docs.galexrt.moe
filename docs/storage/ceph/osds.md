@@ -1,6 +1,5 @@
 ---
 title: "OSDs"
-date: 2019-09-30
 ---
 
 ## OSD Maintenance
@@ -8,7 +7,7 @@ date: 2019-09-30
 ### Gracefully remove OSD
 
 !!! tip
-    If you are using Rook Ceph Operator to run a Ceph cluster in Kubernetes, please follow the official documentation here: [Rook Docs - Ceph OSD Management](https://rook.io/docs/rook/v1.4/ceph-osd-mgmt.html#remove-an-osd).
+    If you are using Rook Ceph Operator to run a Ceph Cluster in Kubernetes, please follow the official documentation here: [Rook Docs - Ceph OSD Management](https://rook.io/docs/rook/v1.4/ceph-osd-mgmt.html#remove-an-osd).
 
 First thing is to set the crush weight to zero, either instantly to `0.0` or a bit gracefully*.
 (*gracefully should always be used when the cluster is in use, though any OSD weight change will cause data redistribution)

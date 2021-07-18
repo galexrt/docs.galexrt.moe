@@ -1,6 +1,5 @@
 ---
 title: "Glossar"
-date: 2019-08-16
 ---
 
 ## OS1 and OS2

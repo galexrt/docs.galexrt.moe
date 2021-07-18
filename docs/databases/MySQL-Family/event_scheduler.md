@@ -1,6 +1,5 @@
 ---
 title: "event_scheduler"
-date: 2020-02-21
 ---
 
 Ever wanted to run queries in a cronjob? Where to safely put the database credentials? MySQL / MariaDB can help out with that.

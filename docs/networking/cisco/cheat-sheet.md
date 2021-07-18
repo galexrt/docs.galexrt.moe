@@ -1,6 +1,5 @@
 ---
 title: "Cheat Sheet"
-date: 2018-05-24
 ---
 
 ## Allow unsupported Transceivers to be used
