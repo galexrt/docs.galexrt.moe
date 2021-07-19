@@ -12,9 +12,25 @@ Ceph offers block storage (RBD), network filesystem (CephFS), object storage (RG
     * OSD: Object Storage Daemon
     * RGW: Rados Gateway
 * "Things"
-    * Object: A single object "somewhere in the cluster". Part of a PG.
     * Pool: Group of PGs, separation .
     * PG: Placement Group, group of objects in a pool.
+    * Object: A single object "somewhere in the cluster". Part of a PG.
+
+## Pool -> PG -> Object
+
+```mermaid
+graph LR
+subgraph Pool
+    subgraph PG-1[PG 1]
+        Object-1[Object 1]
+        Object-2[Object 2]
+    end
+    subgraph PG-2[PG 2]
+        Object-3[Object 3]
+        Object-4[Object 4]
+    end
+end
+```
 
 # Ceph Cluster Components
 
@@ -121,9 +137,14 @@ graph LR
     Client-A --> MDS-1
     Client-B --> MDS-1
     Client-C ---> MDS-2
+
     MDS-1 -.- MDS-2
     MDS-1 --> OSDs
     MDS-2 --> OSDs
+
+    Client-A ---> OSDs
+    Client-B ---> OSDs
+    Client-C ---> OSDs
 ```
 
 **Man Page**: https://docs.ceph.com/en/latest/man/8/ceph-mds/
