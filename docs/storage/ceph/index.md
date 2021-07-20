@@ -2,9 +2,11 @@
 title: "Ceph"
 ---
 
+# Ceph
+
 Ceph offers block storage (RBD), network filesystem (CephFS), object storage (RGW, S3, SWIFT) and key value storage (librados).
 
-# Glossary
+## Glossary
 
 * Daemons
     * MON: Monitor Daemon
@@ -16,7 +18,7 @@ Ceph offers block storage (RBD), network filesystem (CephFS), object storage (RG
     * PG: Placement Group, group of objects in a pool.
     * Object: A single object "somewhere in the cluster". Part of a PG.
 
-## Pool -> PG -> Object
+### Pool -> PG -> Object
 
 ```mermaid
 graph LR
@@ -32,9 +34,9 @@ subgraph Pool
 end
 ```
 
-# Ceph Cluster Components
+## Ceph Cluster Components
 
-## MON - Monitor Daemon
+### MON - Monitor Daemon
 
 The MONs are keeping a **map** of the current MONs, OSDs, PGs, Pools and so on.
 
@@ -57,7 +59,7 @@ graph LR
 
 **Man Page**: https://docs.ceph.com/en/latest/man/8/ceph-mon/
 
-### Quorum
+#### Quorum
 
 Simply put, if you run with 3 MONs you can lose 1 MON before the cluster will come to a halt as the quorum would be lost.
 
@@ -74,7 +76,7 @@ Simply put, if you run with 3 MONs you can lose 1 MON before the cluster will co
 For more information regarding quorum, checkout the following link from the ETCD documentation: [ETCD v3.3. - FAQ Why an odd number of cluster members?](https://etcd.io/docs/v3.3/faq/#why-an-odd-number-of-cluster-members).
 ETCD is a good example of an infrastructure critical application (for Kubernetes) which requires a Quorum for (most; depending on your settings) operations.
 
-## MGR - Manager Daemon
+### MGR - Manager Daemon
 
 The MGR daemon(s) "provide additional monitoring and interfaces to external monitoring and management systems". You need to have at least one running as otherwise certain status information in, e.g., `ceph status` (`ceph -s`), will not be shown.
 It is recommended to run at least 1.
@@ -93,7 +95,7 @@ The MGR daemon(s) have many modules to for example provide metrics for Prometheu
 
 **Man Page**: https://docs.ceph.com/en/latest/mgr/index.html
 
-## OSD - Object Storage Daemon
+### OSD - Object Storage Daemon
 
 All OSDs normally talk with each other for hearbeat :heart: checking and data replication (actual data and also for data "scrubbing" operations).
 
@@ -126,7 +128,7 @@ graph LR
 
 **Man Page**: https://docs.ceph.com/en/latest/man/8/ceph-osd/
 
-## MDS - Metadata Server Daemon
+### MDS - Metadata Server Daemon
 
 The MDS is the metadata server for the CephFilesystem (CephFS).
 
@@ -149,7 +151,7 @@ graph LR
 
 **Man Page**: https://docs.ceph.com/en/latest/man/8/ceph-mds/
 
-## RGW - RADOS REST Gateway
+### RGW - RADOS REST Gateway
 
 RGW can offer S3 and / or SWIFT compatible storage, allowing to use it as a "replacement" for AWS S3 object storage in some cases.
 An advantage to, e.g., the block storage (RBD) and CephFS is that the client itself does not need direct access to the MONs, OSDs, etc., though it depends on the use case and the performance required per client / application.
@@ -184,21 +186,21 @@ graph LR
 
 ***
 
-# Old Diagrams
+## Old Diagrams
 
 _The source for the diagrams, can be found as `.graphml` at the same path as the images._
 
-## Basic Cluster with HDDs and SSDs
+### Basic Cluster with HDDs and SSDs
 
 ![ceph-architecture-cluster-basic-hdds-ssds.png](architecture/ceph-architecture-cluster-basic-hdds-ssds.png)
 
-## Cluster with RGW for S3-compatible Object Storage
+### Cluster with RGW for S3-compatible Object Storage
 
 No direct OSD access network is required by the consumers of the object storage.
 This can be seen as a "advantage" over RBD and CephFS, though it completely depends on your use case.
 
 ![ceph-architecture-cluster-rgw.png](architecture/ceph-architecture-cluster-rgw.png)
 
-## Cluster with NVMe OSDs (+ Multi Datacenter Scenario)
+### Cluster with NVMe OSDs (+ Multi Datacenter Scenario)
 
 ![ceph-architecture-cluster-nvme-osds.png](architecture/ceph-architecture-cluster-nvme-osds.png)

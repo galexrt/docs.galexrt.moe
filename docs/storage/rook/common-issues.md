@@ -71,7 +71,7 @@ If you have some weird kernel and / or kubelet configuration, make sure Ceph CSI
 * Is your `rook-ceph-mgr-*` Pod(s) running as well?
 * Check the `rook-ceph-mon-*` and `rook-ceph-mgr-*` logs for errors
 * Try deleteing the toolbox Pod, "maybe it is just a fluke in your Kubernetes cluster network / CNI.
-    * Also make sure you are using the latest Rook Ceph Toolbox YAML for the Rook Ceph version you are running on, see [](#rook-ceph-toolbox-pod-not-creating--stuck).
+    * Also make sure you are using the latest Rook Ceph Toolbox YAML for the Rook Ceph version you are running on, see [Rook Ceph Toolbox Pod not Creating / Stuck section](#rook-ceph-toolbox-pod-not-creating--stuck).
 * In case all these seem to indicate a loss of quorum, e.g., the `rook-ceph-mon-*` talk about `probing` for other mons only, you might need to follow the disaster recovery guide for your Rook Ceph version here: [Rook v1.6 Docs - Ceph Disaster Recovery - Restoring Mon Quorum](https://rook.io/docs/rook/v1.6/ceph-disaster-recovery.html#restoring-mon-quorum).
 
 ## A MON Pod is running on a Node which is down
@@ -90,3 +90,81 @@ Checkout the official Ceph OSD Management guide from Rook here: [Rook v1.6 Docs 
 * The Rook Ceph Toolbox can only fully startup after a Ceph Cluster has at least passed the initial setup by the Rook Ceph operator.
     * Monitor the Rook Ceph Operator logs for errors.
 * Check the events of the Toolbox Pod using `kubectl describe pod POD_NAME`.
+
+## Ceph OSD Tree: Wrong Device Class
+
+1. Check device class, second column in `ceph osd tree` output.
+2. If you need to change the device class, you first must remove the current one (if it has one set): `ceph osd crush rm-device-class osd.ID`.
+3. Now you can set the device class for the OSD: `ceph osd crush set-device-class CLASS osd.ID`
+   * Default device classes (at the time of writing): `hdd`, `ssd`, `nvme`
+   * Source: [Ceph Docs Latest - CRUSH Maps - Device Classes](https://docs.ceph.com/en/latest/rados/operations/crush-map/#device-classes)
+
+## `HEALTH_WARN: clients are using insecure global_id reclaim` / `HEALTH_WARN: mons are allowing insecure global_id reclaim` 
+
+**Source**: https://github.com/rook/rook/issues/7746
+
+> I can confirm this is happening in all clusters, whether a clean install or upgraded cluster, running at least versions: `v14.2.20`, `v15.2.11` or `v16.2.1`.
+> 
+> According to the [CVE also previously mentioned](https://docs.ceph.com/en/latest/security/CVE-2021-20288/), there is a security issue where clients need to be upgraded to the releases mentioned. Once all the clients are updated (e.g. the rook daemons and csi driver), a new setting needs to be applied to the cluster that will disable allowing the insecure mode.
+> 
+> If you see both these health warnings, then either one of the rook or csi daemons has not been upgraded yet, or some other client is detected on the older version:
+> 
+>     health: HEALTH_WARN
+>             client is using insecure global_id reclaim
+>             mon is allowing insecure global_id reclaim
+>
+>
+> If you only see this one warning, then the insecure mode should be disabled:
+> 
+>     health: HEALTH_WARN
+>             mon is allowing insecure global_id reclaim
+> To disable the insecure mode from the toolbox after all the clients are upgraded:
+> **Make sure all clients have been upgraded, or else those clients will be blocked after this is set**:
+> 
+>     ceph config set mon auth_allow_insecure_global_id_reclaim false
+>
+> Rook could set this flag automatically after the clients have all been updated.
+
+## Check which "Object Store" is used by an OSD
+
+```console
+$ ceph osd metadata 0 | grep osd_objectstore
+"osd_objectstore": "bluestore",
+```
+
+To get a quick overview of the "object stores" (`bluestore`, (don't use it) `filestore`):
+```console
+$ ceph osd count-metadata osd_objectstore
+{
+    "bluestore": 6
+}
+```
+
+## PersistentVolumeClaims / PersistentVolumes are not Resized
+
+* Make sure the Ceph CSI driver for the storage (block or filesystem) is running (check the logs if you are unsure as well).
+* Check if you use a StorageClass that has `allowVolumeExpansion: false`:
+    ```console
+    $ kubectl get storageclasses.storage.k8s.io
+    NAME              PROVISIONER                     RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
+    rook-ceph-block   rook-ceph.rbd.csi.ceph.com      Retain          Immediate           false                  3d21h
+    rook-ceph-fs      rook-ceph.cephfs.csi.ceph.com   Retain          Immediate           true                   3d21h
+    ```
+* To fix this simply set `allowVolumeExpansion: true` in the `StorageClass`. Below is a `StorageClass` with this option set, it is at the top level of the object (not in `.spec` or similar):
+    ```yaml hl_lines="1"
+    allowVolumeExpansion: true
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+      name: rook-ceph-block
+    parameters:
+      clusterID: rook-ceph
+      csi.storage.k8s.io/controller-expand-secret-name: rook-csi-rbd-provisioner
+      [...]
+      imageFeatures: layering
+      imageFormat: "2"
+      pool: replicapool
+    provisioner: rook-ceph.rbd.csi.ceph.com
+    reclaimPolicy: Retain
+    volumeBindingMode: Immediate
+    ```

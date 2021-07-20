@@ -13,7 +13,7 @@ title: "Projects, Tools and Utilites"
 ### Client
 
 * https://github.com/kubernetes-sigs/krew/ - Find and install kubectl plugins - krew.dev
-* https://github.com/wercker/stern - Multi pod and container log tailing for Kubernetes with regex support for selection of Pods and Pods' containers.
+* https://github.com/stern/stern - Multi pod and container log tailing for Kubernetes with regex support for selection of Pods and Pods' containers.
 
 ### Network
 
