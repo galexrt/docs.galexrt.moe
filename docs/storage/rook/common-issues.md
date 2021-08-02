@@ -168,3 +168,11 @@ $ ceph osd count-metadata osd_objectstore
     reclaimPolicy: Retain
     volumeBindingMode: Immediate
     ```
+
+## `[...] failed to reconcile cluster "rook-ceph": [...] failed to create servicemonitor. the server could not find the requested resource (post servicemonitors.monitoring.coreos.com)`
+
+Set `.spec.monitoring.enabled` to `false` in your CephCluster object / yaml (and apply it).
+
+## `unable to get monitor info from DNS SRV with service name: ceph-mon` / Can't run `ceph` and `rbd` commands in the Rook Ceph XYZ Pod
+
+You can only run `ceph`, `rbd`, etc. commands in the Rook Ceph toolbox. Regarding the Ceph toolbox checkout the Rook documentation here: [Rook v1.6 Docs - Ceph Toolbox](https://rook.io/docs/rook/v1.6/ceph-toolbox.html).
