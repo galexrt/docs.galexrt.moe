@@ -76,11 +76,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.galexrt.moe/kubernetes/tips-and-tricks/</loc>
-         <lastmod>2021-08-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.galexrt.moe/kubernetes/ETCD/cheat-sheet/</loc>
          <lastmod>2021-08-24</lastmod>
          <changefreq>daily</changefreq>
