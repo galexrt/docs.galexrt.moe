@@ -2,9 +2,28 @@
 title: "Cheat Sheet"
 ---
 
+## Update StatefulSet `volumeClaimTemplates` And Other Uneditable Sections
+
+1. Get the latest YAML of the StatefulSet you want to update (e.g., change size of a `volumeClaimTemplates` entry).
+2. Make the changes to the YAML file.
+3. Run `kubectl delete statefulset STATEFULSET_NAME --cascade=orphan`
+   1. The important thing here is the `--cascade=orphan` flag, it stops the `ControllerRevisions` objects (+ the Pods) to **not be deleted** (no downtime).
+4. Now just apply your StatefulSet YAML and if needed trigger a rolling update of the StatefulSet using the `kubectl rollout restart statefulset STATEFULSET_NAME` command.
+
 ## Quickly trigger Rolling Update of Deployment, StatefulSet, DaemonSet, etc
 
-```shell
+### New Way
+
+Example for `StatefulSet` and `Deployment` below:
+
+```console
+kubectl rollout restart statefulset STATEFULSET_NAME
+kubectl rollout restart deployment DEPLOYMENT_NAME
+```
+
+### Old Way
+
+```console
 kubectl patch -n kube-system ds kube-proxy -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{\"date\":\"$(date +'%s')\"}}}}}"
 ```
 
