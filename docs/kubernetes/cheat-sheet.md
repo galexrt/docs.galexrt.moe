@@ -72,3 +72,23 @@ $ nsenter -t 1 -m -u -n -i sh
 
 The `node-role.kubernetes.io/` can take "anything" as a role.
 Meaning that `node-role.kubernetes.io/my-cool-role` (any value) will cause the `kubectl get nodes` output to display `my-cool-role` (and other such role labels) as the Node role.
+
+## kubectl: Context Switching
+
+### Switch Namespace
+
+```console
+kubectl config set-context --current --namespace NAMESPACE
+```
+
+### Switch Context
+
+```console
+kubectl config use-context CONTEXT_NAME
+```
+
+### Show Contexts
+
+```console
+kubectl config get-contexts
+```
