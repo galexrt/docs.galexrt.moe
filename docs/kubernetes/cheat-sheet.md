@@ -92,3 +92,11 @@ kubectl config use-context CONTEXT_NAME
 ```console
 kubectl config get-contexts
 ```
+
+
+## Run A CronJob Manually
+
+```console
+kubectl create job --from=cronjob/CRONJOB_NAME JOB_NAME
+kubectl create job --from=cronjob/curator curator-manual-run
+```
