@@ -169,10 +169,44 @@ $ ceph osd count-metadata osd_objectstore
     volumeBindingMode: Immediate
     ```
 
+## `[...] failed to retrieve servicemonitor. servicemonitors.monitoring.coreos.com "rook-ceph-mgr" is forbidden: [...]`
+
+You have the Prometheus Operator installed in your Kubernetes cluster, but have not applied the RBAC necessary for the Rook Ceph Operator to be able to create the monitoring objects.
+
+To rectify this, you can run the following command and / or add the file to your deployment system:
+
+```console
+kubectl apply -f https://raw.githubusercontent.com/rook/rook/master/cluster/examples/kubernetes/ceph/monitoring/rbac.yaml
+```
+
+(Original file located at: [https://github.com/rook/rook/blob/master/cluster/examples/kubernetes/ceph/monitoring/rbac.yaml](https://github.com/rook/rook/blob/master/cluster/examples/kubernetes/ceph/monitoring/rbac.yaml))
+
 ## `[...] failed to reconcile cluster "rook-ceph": [...] failed to create servicemonitor. the server could not find the requested resource (post servicemonitors.monitoring.coreos.com)`
+
+This normally means that you don't have the [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) installed in your Kubernetes cluster. It is required for `.spec.monitoring.enabled: true` in the CephCluster object to work (the operator to be able to create the `ServiceMonitor` object to enable monitoring).
+
+For the [Rook Ceph - Prometheus Monitoring Setup Steps](https://rook.io/docs/rook/v1.7/ceph-monitoring.html#prometheus-alerts) check the link.
+
+### Solution A: Disable Monitoring in CephCluster
 
 Set `.spec.monitoring.enabled` to `false` in your CephCluster object / yaml (and apply it).
 
+### Solution B: Install Prometheus Operator
+
+If you want to use Prometheus for monitoring your applications and in this case also Rook Ceph Cluster easily in Kubernetes, make sure to install the [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator).
+
+Checkout the [Prometheus Operator - Getting Started Guide](https://github.com/prometheus-operator/prometheus-operator/blob/main/Documentation/user-guides/getting-started.md).
+
 ## `unable to get monitor info from DNS SRV with service name: ceph-mon` / Can't run `ceph` and `rbd` commands in the Rook Ceph XYZ Pod
 
-You can only run `ceph`, `rbd`, etc. commands in the Rook Ceph toolbox. Regarding the Ceph toolbox checkout the Rook documentation here: [Rook v1.6 Docs - Ceph Toolbox](https://rook.io/docs/rook/v1.6/ceph-toolbox.html).
+You are only supposed to run `ceph`, `rbd`, `radosgw-admin`, etc., commands in the **Rook Ceph Toolbox / Tools Pod**.
+
+Regarding the Rook Ceph Toolbox Pod checkout the Rook documentation here: [Rook Ceph Docs - Ceph Toolbox](https://rook.io/docs/rook/v1.7/ceph-toolbox.html).
+
+### Quick Command to Rook Ceph Toolbox Pod
+
+This requires you to have the Rook Ceph Toolbox deployed, see [Rook Ceph Docs - Ceph Toolbox](https://rook.io/docs/rook/v1.7/ceph-toolbox.html) for more information.
+
+```console
+kubectl -n rook-ceph exec -it $(kubectl -n rook-ceph get pod -l "app=rook-ceph-tools" -o jsonpath='{.items[0].metadata.name}') -- bash
+```
