@@ -219,3 +219,7 @@ kubectl -n rook-ceph exec -it $(kubectl -n rook-ceph get pod -l "app=rook-ceph-t
         1. Run `ceph-bluestore-tool show-label --dev=/dev/sdX` (note down the OSD ID (`whoami` field in the JSON output) and which disk the OSD is on (example: `OSD 11 /dev/sda`).
 2. The `rook-ceph-osd-...` deployment needs to be updated with the new/ correct device path. The `ROOK_BLOCK_PATH` environment variable must have the correct device path (there are two occurrences, in the `containers:` and in `initContainers:` list).
 3. After a few seconds / minutes the OSD should show up as `up` in the `ceph osd tree` output (the command can be run in the `rook-ceph-tools` Pod). If you have scaled down the OSD Deployment, make sure to scale it up to `1` again (`kubectl scale -n rook-ceph deployment --replicas=1 rook-ceph-osd...`)
+
+***
+
+Should this page not have yielded you a solution, checkout the [Ceph Common Issues](../ceph/common-issues.md) doc as well.
