@@ -2,14 +2,12 @@
 title: "Common Issues"
 ---
 
-Be sure to checkout the [Rook Ceph Common Issues page](https://rook.io/docs/rook/v1.6/ceph-common-issues.html) and **that all prerequisites for the storage backend of your choice** are met!
+Be sure to checkout the [Rook Ceph Common Issues page](https://rook.io/docs/rook/v1.8/ceph-common-issues.html) and **that all prerequisites for the storage backend of your choice** are met!
 
 * [General Rook prerequisites]()
-* [Ceph prerequisites](https://rook.io/docs/rook/v1.6/ceph-prerequisites.html)
+* [Ceph prerequisites](https://rook.io/docs/rook/v1.8/ceph-prerequisites.html)
 
 ***
-
-# Ceph
 
 ## Where did the `rook-discover-*` Pods go after a recent Rook Ceph update?
 
@@ -47,20 +45,20 @@ This behavior is controlled by the `ROOK_ENABLE_DISCOVERY_DAEMON` located in the
         dd if=/dev/zero of="$DISK" bs=1M count=100 oflag=direct,dsync
         blkdiscard "$DISK"
         ```
-        Source: [https://rook.io/docs/rook/v1.6/ceph-teardown.html#delete-the-data-on-hosts](https://rook.io/docs/rook/v1.6/ceph-teardown.html#delete-the-data-on-hosts)
+        Source: [https://rook.io/docs/rook/v1.8/ceph-teardown.html#delete-the-data-on-hosts](https://rook.io/docs/rook/v1.8/ceph-teardown.html#delete-the-data-on-hosts)
 * Was the disk previously used as a Ceph OSD?
-    * Make sure to follow the teardown steps, but make sure to only remove the LVM stuff from that one disk and not from all, see [https://rook.io/docs/rook/v1.6/ceph-teardown.html#delete-the-data-on-hosts](https://rook.io/docs/rook/v1.6/ceph-teardown.html#delete-the-data-on-hosts).
+    * Make sure to follow the teardown steps, but make sure to only remove the LVM stuff from that one disk and not from all, see [https://rook.io/docs/rook/v1.8/ceph-teardown.html#delete-the-data-on-hosts](https://rook.io/docs/rook/v1.8/ceph-teardown.html#delete-the-data-on-hosts).
 
 ## A Pod can't mount its PersistentVolume after an "unclean" / "undrained" Node shutdown
 
 1. Check the events of the Pod using `kubectl describe pod POD_NAME`.
 2. Check the Node's `dmesg` logs.
 3. Check the kubelet logs for errors related to CSI connectivity and / or make sure the node can reach every other Kubernetes cluster node (at least the Rook Ceph cluster nodes (Ceph Mons, OSDs, MGRs, etc.)).
-4. Checkout the [CSI Common Issues - Rook Docs](https://rook.io/docs/rook/v1.6/ceph-csi-troubleshooting.html).
+4. Checkout the [CSI Common Issues - Rook Docs](https://rook.io/docs/rook/v1.8/ceph-csi-troubleshooting.html).
 
 ## Ceph CSI: Provisioning, Mounting, Deletion or something doesn't work
 
-Make sure you have checked out the [CSI Common Issues - Rook Docs](https://rook.io/docs/rook/v1.6/ceph-csi-troubleshooting.html).
+Make sure you have checked out the [CSI Common Issues - Rook Docs](https://rook.io/docs/rook/v1.8/ceph-csi-troubleshooting.html).
 
 If you have some weird kernel and / or kubelet configuration, make sure Ceph CSI's config options in the Rook Ceph Operator config is correctly setup (e.g., `LIB_MODULES_DIR_PATH`, `ROOK_CSI_KUBELET_DIR_PATH`, `AGENT_MOUNTS`).
 
@@ -72,7 +70,7 @@ If you have some weird kernel and / or kubelet configuration, make sure Ceph CSI
 * Check the `rook-ceph-mon-*` and `rook-ceph-mgr-*` logs for errors
 * Try deleteing the toolbox Pod, "maybe it is just a fluke in your Kubernetes cluster network / CNI.
     * Also make sure you are using the latest Rook Ceph Toolbox YAML for the Rook Ceph version you are running on, see [Rook Ceph Toolbox Pod not Creating / Stuck section](#rook-ceph-toolbox-pod-not-creating--stuck).
-* In case all these seem to indicate a loss of quorum, e.g., the `rook-ceph-mon-*` talk about `probing` for other mons only, you might need to follow the disaster recovery guide for your Rook Ceph version here: [Rook v1.6 Docs - Ceph Disaster Recovery - Restoring Mon Quorum](https://rook.io/docs/rook/v1.6/ceph-disaster-recovery.html#restoring-mon-quorum).
+* In case all these seem to indicate a loss of quorum, e.g., the `rook-ceph-mon-*` talk about `probing` for other mons only, you might need to follow the disaster recovery guide for your Rook Ceph version here: [Rook v1.8 Docs - Ceph Disaster Recovery - Restoring Mon Quorum](https://rook.io/docs/rook/v1.8/ceph-disaster-recovery.html#restoring-mon-quorum).
 
 ## A MON Pod is running on a Node which is down
 
@@ -82,7 +80,7 @@ If you have some weird kernel and / or kubelet configuration, make sure Ceph CSI
 
 ## Remove / Replace a failed disk
 
-Checkout the official Ceph OSD Management guide from Rook here: [Rook v1.6 Docs - Ceph OSD Management](https://rook.io/docs/rook/v1.6/ceph-osd-mgmt.html).
+Checkout the official Ceph OSD Management guide from Rook here: [Rook v1.8 Docs - Ceph OSD Management](https://rook.io/docs/rook/v1.8/ceph-osd-mgmt.html).
 
 ## Rook Ceph Toolbox Pod not Creating / Stuck
 
@@ -185,7 +183,7 @@ kubectl apply -f https://raw.githubusercontent.com/rook/rook/master/cluster/exam
 
 This normally means that you don't have the [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) installed in your Kubernetes cluster. It is required for `.spec.monitoring.enabled: true` in the CephCluster object to work (the operator to be able to create the `ServiceMonitor` object to enable monitoring).
 
-For the [Rook Ceph - Prometheus Monitoring Setup Steps](https://rook.io/docs/rook/v1.7/ceph-monitoring.html#prometheus-alerts) check the link.
+For the [Rook Ceph - Prometheus Monitoring Setup Steps](https://rook.io/docs/rook/v1.8/ceph-monitoring.html#prometheus-alerts) check the link.
 
 ### Solution A: Disable Monitoring in CephCluster
 
@@ -201,11 +199,11 @@ Checkout the [Prometheus Operator - Getting Started Guide](https://github.com/pr
 
 You are only supposed to run `ceph`, `rbd`, `radosgw-admin`, etc., commands in the **Rook Ceph Toolbox / Tools Pod**.
 
-Regarding the Rook Ceph Toolbox Pod checkout the Rook documentation here: [Rook Ceph Docs - Ceph Toolbox](https://rook.io/docs/rook/v1.7/ceph-toolbox.html).
+Regarding the Rook Ceph Toolbox Pod checkout the Rook documentation here: [Rook Ceph Docs - Ceph Toolbox](https://rook.io/docs/rook/v1.8/ceph-toolbox.html).
 
 ### Quick Command to Rook Ceph Toolbox Pod
 
-This requires you to have the Rook Ceph Toolbox deployed, see [Rook Ceph Docs - Ceph Toolbox](https://rook.io/docs/rook/v1.7/ceph-toolbox.html) for more information.
+This requires you to have the Rook Ceph Toolbox deployed, see [Rook Ceph Docs - Ceph Toolbox](https://rook.io/docs/rook/v1.8/ceph-toolbox.html) for more information.
 
 ```console
 kubectl -n rook-ceph exec -it $(kubectl -n rook-ceph get pod -l "app=rook-ceph-tools" -o jsonpath='{.items[0].metadata.name}') -- bash
@@ -219,6 +217,37 @@ kubectl -n rook-ceph exec -it $(kubectl -n rook-ceph get pod -l "app=rook-ceph-t
         1. Run `ceph-bluestore-tool show-label --dev=/dev/sdX` (note down the OSD ID (`whoami` field in the JSON output) and which disk the OSD is on (example: `OSD 11 /dev/sda`).
 2. The `rook-ceph-osd-...` deployment needs to be updated with the new/ correct device path. The `ROOK_BLOCK_PATH` environment variable must have the correct device path (there are two occurrences, in the `containers:` and in `initContainers:` list).
 3. After a few seconds / minutes the OSD should show up as `up` in the `ceph osd tree` output (the command can be run in the `rook-ceph-tools` Pod). If you have scaled down the OSD Deployment, make sure to scale it up to `1` again (`kubectl scale -n rook-ceph deployment --replicas=1 rook-ceph-osd...`)
+
+## `_read_bdev_label failed to open /var/lib/ceph/osd/ceph-1/block: (13) Permission denied`
+
+### Issue
+
+* OSD Pod is not starting with logs about the "ceph osd block device" and "permission denied"
+
+### Solution: Do you have the `ceph` package(s) installed on the host and / or a user/group named `ceph`?
+
+This can potentially mess with the owner/group of the ceph osd block device, as described in [GitHub rook/rook Issue 7519 "OSD pod permissions broken, unable to open OSD superblock after node restart"](https://github.com/rook/rook/issues/7519#issuecomment-922263364).
+
+You can either change the user and group ID of the `ceph` user on the host to the one inside the `ceph/ceph` image that your Rook Ceph cluster is running right now (CephCluster object `.spec.cephVersion.image`).
+
+```console
+$ kubectl get -n rook-ceph cephclusters.ceph.rook.io rook-ceph -o yaml
+apiVersion: ceph.rook.io/v1
+kind: CephCluster
+metadata:
+[...]
+  name: rook-ceph
+  namespace: rook-ceph
+[...]
+spec:
+  cephVersion:
+    image: quay.io/ceph/ceph:v16.2.6-20210927
+[...]
+```
+
+Depending your hosts, you might not need to even have the `ceph` packages installed. If you are using Rook Ceph, you normally don't need any ceph related packages on the hosts.
+
+Should this have not fixed your issue, you might be running into some other permission issue. If your hosts are using a Linux distribution that uses SELinux, you might need to follow these steps to re-configure the Rook Ceph operator: [Rook Ceph Docs - OpenShift Special Configuration Guide](https://rook.io/docs/rook/v1.8/ceph-openshift.html#rook-settings).
 
 ***
 
