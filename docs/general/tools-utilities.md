@@ -2,6 +2,10 @@
 title: "Projects, Tools and Utilites"
 ---
 
+## Automation
+
+* https://github.com/duncs/clusterssh - Not necessarily "automation" in the classical sense, but being to access multiple servers over SSH at the same time.
+
 ## Network
 
 ### DNS
@@ -20,6 +24,13 @@ title: "Projects, Tools and Utilites"
 * https://github.com/inovex/illuminatio - The kubernetes network policy validator.
 * https://github.com/aquasecurity/kube-bench - Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
 
-## Monitoring with Prometheus
+## Monitoring
 
-See [Monitoring->Prometheus->Exporters page](../monitoring/prometheus/).
+### Prometheus
+
+* Exporters: See [Monitoring -> Prometheus -> Exporters page](../monitoring/prometheus/).
+
+## Databases
+
+* https://dbeaver.io/ - Great tool to access many popular databases. An enterprise edition which supports more databases (e.g., MongoDB) is available.
+* https://www.mongodb.com/docs/compass/current/ - "Basic" GUI for querying and managing MongoDB servers.

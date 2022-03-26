@@ -9,7 +9,7 @@ title: "Snapshots: Save & Restore"
 
 ## Take a snapshot
 
-```bash
+```console
 ETCDCTL_API=3 etcdctl \
     --endpoints $ETCD_ENDPOINT \
     snapshot save snapshot.db
@@ -28,7 +28,7 @@ Be sure to provide all flags that are specified in, e.g., systemd unit file, Kub
 
 The command is looking about like that depending on what flags are used for your ETCD node:
 
-```bash
+```console
 # Run the command as `root` user after that use `chown` to correct ownership of files
 ETCDCTL_API=3 etcdctl \
     snapshot restore snapshot.db \

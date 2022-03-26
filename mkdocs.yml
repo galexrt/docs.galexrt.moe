@@ -3,7 +3,7 @@ site_url: 'https://docs.galexrt.moe'
 repo_url: https://github.com/galexrt/docs.galexrt.moe
 edit_uri: edit/main/docs/
 site_author: Alexander Trost
-site_description: "galexrt tips, tricks, cheat sheets and documentation stuff."
+site_description: "galexrt's tips, tricks, cheat sheets and documentation treasure trove chest for everyone to read, learn and improve."
 use_directory_urls: true
 copyright: '<a href="/site-notice/">Impressum</a> | <a href="/privacy-policy/">Privacy Policy</a> | This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International License</a>'
 theme:
@@ -42,10 +42,6 @@ extra_css:
   - stylesheets/extra.css
 plugins:
   - search
-  # Removed in material mkdocs 6.0
-  # See https://squidfunk.github.io/mkdocs-material/deprecations/#bundled-plugins
-  #- awesome-pages
-  #- git-revision-date-localized
   - minify:
       minify_html: true
       minify_js: true

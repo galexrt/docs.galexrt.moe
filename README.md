@@ -6,7 +6,7 @@ This work is licensed under the [Creative Commons Attribution 4.0 International 
 
 ### Previewing The Site
 
-To preview the side, you need to have `docker` installed:
+To preview the side, you need to have `docker` (or using `podman`'s docker compatible command should also work) installed:
 
 ```console
 $ make serve

@@ -5,7 +5,7 @@ title: "Cheat Sheet"
 
 ### Automatic OS and Firmware Update
 
-```shell
+```console
 /system routerboard settings set auto-upgrade=yes
 /system package update
 check-for-updates once
@@ -20,7 +20,7 @@ check-for-updates once
 
 ### Set Hostname / Identity
 
-```shell
+```console
 /system identity
 set name=HOSTNAME
 ```
@@ -29,26 +29,26 @@ set name=HOSTNAME
 
 To `Europe/Berlin`.
 
-```shell
+```console
 /system clock
 set time-zone-name=Europe/Berlin
 ```
 
 ### Disable Ports beginning with `ether`
 
-```shell
+```console
 :foreach i in=[/interface find name~"ether"] do={ /interface ethernet set $i disabled=yes }
 ```
 
 ### "Advertise" 10G on SFP+ Ports
 
-```shell
+```console
 :foreach i in=[/interface find name~"sfp-sfpplus"] do={ /interface ethernet set $i advertise=10000M-full; }
 ```
 
 ### Enable Graphs / Graphing
 
-```shell
+```console
 /tool graphing
 set page-refresh=240
 /tool graphing interface
@@ -60,7 +60,7 @@ add allow-address=172.16.0.0/24
 
 ### Set Boot target of Device
 
-```shell
+```console
 /system routerboard settings
 set boot-os=router-os
 ```

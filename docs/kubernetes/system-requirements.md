@@ -9,8 +9,10 @@ title: "System Requirements"
 
 Network:
 
-* Bandwidth: at the very least 1G, recommended for smaller, lower traffic environents is 10G, 25G or more.
-  * Note: To reduce costs you get away with just having a single interface, instead of, e.g., 2 bonded interfaces, though having 2 will allow for more performance and also the server still being reachable in case of failure.
+* **Bandwidth**: at the very least 1G, recommended for smaller, lower traffic environents is 10G, 25G or more.
+
+!!! note
+    To reduce costs you can get away with just having **a single interface**, instead of, e.g., 2 interfaces being bonded together (it also reduces complexity).
 
 ## Master
 
@@ -23,4 +25,4 @@ Network:
 
     **Too many users of Kubernetes or OpenShift do that and end up with slow performing clusters in many different ways, simply because the ETCD is slow (even though the kube-apiservers are caching a lot)**
 
-Use SSDs or any other storage with **low latencies** (LOW)! ETCD is pretty much latency bound, it needs its "few" IOPS as well but latency is the killer (sequential writing, e.g., WAL and DB).
+Use at least SSDs (minimum SATA based, better NVMe based) or any other storage with **low latencies**! ETCD is pretty much latency bound. It needs "few" IOPS but latency is the killer (sequential writing, e.g., WAL and DB).

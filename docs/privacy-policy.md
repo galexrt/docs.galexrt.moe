@@ -109,7 +109,7 @@ Postfach 11<br />
 Germany
 </address>
 
-E-mail: galexrt@googlemail.com
+E-mail: me@galexrt.moe
 
 The controller is the natural person or legal entity that single-handedly or jointly with others makes decisions as to the purposes of and resources for the processing of personal data (e.g. names, e-mail addresses, etc.).
 
@@ -307,7 +307,7 @@ Postfach 11<br />
 Germany
 </address>
 
-E-Mail: galexrt@googlemail.com
+E-Mail: me@galexrt.moe
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 

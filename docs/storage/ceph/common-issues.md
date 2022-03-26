@@ -40,7 +40,7 @@ LARGE_OMAP_OBJECTS 1 large omap objects
 
 The following command should fix the issue:
 
-```bash
+```console
 radosgw-admin reshard stale-instances rm
 ```
 
@@ -125,6 +125,18 @@ SAMSUNG_MZVL2512HCJQ-00B00_S1234567890123  nvme0n1  osd.2
 SAMSUNG_MZVL2512HCJQ-00B00_S1234567890123  nvme2n1  osd.8
 SAMSUNG_MZVL2512HCJQ-00B00_S1234567890123  nvme3n1  osd.13
 ```
+
+## CephOSDSlowOps Alerts
+
+### Issue
+
+TODO
+
+### Things to Try
+
+* Ensure the disks you are using are healthy
+    * Check the SMART values. A bad disks can lock up an application (such as a Ceph OSD) or worse the whole server.
+* 
 
 ***
 

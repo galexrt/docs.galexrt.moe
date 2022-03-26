@@ -247,11 +247,13 @@ verbs:
 ### Prometheus Kubernetes ETCD Scrape Job Config
 
 !!! info
-    This selects the master Nodes based on the `node-role.kubernetes.io/master` label.
-    So be sure to have it set on the master Nodes.
+    This selects the master Nodes based on the `node-role.kubernetes.io/control-plane` (old label `node-role.kubernetes.io/master`) label.
+    So be sure to have it set on the control plane nodes (e.g., kubeadm automatically sets it on control plane nodes).
 
     For more information see [Kubernetes Cheat Sheet - Role Label for Node objects](../cheat-sheet.md#role-label-for-node-objects).
 
-```yaml
-TODO
-```
+I can only recommend you to use the Prometheus Community Helm Charts for this and checking out their documentation regarding the ETCD certificates / credentials required for accessing the metrics.
+
+* https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+* https://github.com/prometheus-operator/kube-prometheus
+* https://github.com/prometheus-community/helm-charts/issues/204#issuecomment-765155883

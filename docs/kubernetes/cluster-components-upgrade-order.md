@@ -4,11 +4,12 @@ title: "Cluster Components Upgrade Order"
 
 The following is a recommended Upgrade Order for the Components of a Kubernetes cluster:
 
-* Master Components
+* Control Plane Components
     1. `kube-apiserver`
     1. `kube-controller-manager`
         1. If used, `cloud-controller-manager`
     1. `kube-scheduler`
+    2. `etcd`
 * Node Components
     1. `kubelet`
     1. `kube-proxy`
@@ -16,6 +17,9 @@ The following is a recommended Upgrade Order for the Components of a Kubernetes 
 Other components of a Kubernetes cluster can mostly be updated in any order, as long as the documentation of the component doesn't state otherwise:
 
 * CNI (e.g., Calico, Cillium)
-* `etcd`
 * Operators
-  * Be aware of potential changes in the operator causing unwanted "results".
+
+!!! warning
+    Be aware of any changes to the operator configs and CustomResourceDefinitions causing unwanted "results".
+
+    E.g., new versions of CustomResourceDefinitions have new fields and / or change the behavior.

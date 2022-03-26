@@ -19,7 +19,7 @@ To quote from the project's README:
 
 You can run it:
 
-```bash
+```console
 kuberang
 ```
 This will start the test Deployments and Services.

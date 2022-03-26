@@ -8,7 +8,7 @@ hide:
 
 Welcome to galexrt's docs!
 
-This is a documentation of tips, tricks, "hacks", pitfalls and more in multiple different areas.
+Tips, tricks, cheat sheets and documentation treasure trove chest for everyone to read, learn and improve.
 
 ***
 

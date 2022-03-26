@@ -18,7 +18,7 @@ title: "Editing Kubernetes Objects"
 
 ### Step 1 - Prepare Environment
 
-```bash
+```console
 go get -u github.com/jpbetz/auger
 cd $GOPATH/src/github.com/jpbetz/auger
 go get -u github.com/Masterminds/glide
@@ -37,7 +37,7 @@ make vendor
 !!! note
     The `etcdctl` probably needs to be run inside the etcd container on one of the Kubernetes masters.
 
-```bash
+```console
 ETCDCTL_API=3 etcdctl \
     get /registry/ --keys-only --prefix
 ```
@@ -51,7 +51,7 @@ I recommend you to keep the session on the server for `etcdctl` open and after f
 
 Replace `$YOUR_OBJECT_PATH` with the path of the object or set it as a variable.
 
-```bash
+```console
 ETCDCTL_API=3 etcdctl \
     --endpoints=https://[127.0.0.1]:2379 \
     --cacert=/var/lib/minikube/certs//etcd/ca.crt \
@@ -62,13 +62,13 @@ ETCDCTL_API=3 etcdctl \
 
 Copy `etcd-data-old.bin` to the host, e.g.:
 
-```bash
+```console
 scp $SSH_USER@$SSH_HOST:etcd-data-old.bin .
 ```
 
 ### Step 4 - Decode and edit the produced output as you need
 
-```bash
+```console
 cat etcd-data-old.bin | \
     go run main.go decode > object.yaml
 ```
@@ -77,21 +77,21 @@ Now edit the `object.yaml` as you need.
 
 ### Step 5 - Encode and save data to ETCD
 
-```bash
+```console
 cat object.yaml | \
     go run main.go encode > etcd-data-new.bin
 ```
 
 Copy the `etcd-data-new.bin` to the host, e.g.:
 
-```bash
+```console
 scp etcd-data-new.bin $SSH_USER@$SSH_HOST:
 ```
 
 !!! note
     The `etcdctl` probably needs to be run inside the etcd container on one of the Kubernetes masters.
 
-```bash
+```console
 cat etcd-data-new.bin | \
     ETCDCTL_API=3 etcdctl \
     --endpoints=https://[127.0.0.1]:2379 \

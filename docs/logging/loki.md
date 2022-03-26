@@ -6,7 +6,7 @@ Coming Soon
 
 ***
 
-If you can use Loki instead of Elasticsearch, just do it!
+If you can use Loki instead of Elasticsearch, do it!
 
 From an operational perspective Loki can be run with a lot less resources than a whole EFK (Elasticsearch Fluentd Kibana) stack.
 

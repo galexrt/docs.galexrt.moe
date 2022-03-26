@@ -29,7 +29,7 @@ title: "Kubernetes Name Schemas"
 
 ### Servers / VMs Schema
 
-```bash
+```console
 # When country, provider and dc should be omited:
 {CLUSTER}-{ROLE}-{COUNT_OR_ID}.example.systems
 # Examples:
@@ -53,7 +53,7 @@ k8s02-node-7ca16bnb2r1-aws-usa-west1.example.systems
 
 #### Script: Gernate Hostname (+ ID)
 
-```bash
+```console
 CLUSTER="k8s02"
 ROLE="node"
 COUNT_OR_ID="$(sleep 0.00001; \

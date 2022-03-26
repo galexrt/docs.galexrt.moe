@@ -4,7 +4,7 @@ title: "Example Configs"
 
 ## VLANs + VLAN Ingress Filtering
 
-```shell
+```console
 /interface bridge
 # DO NOT SET `vlan-filtering=yes` here already! Otherwise you would lock yourself out.
 add dhcp-snooping=yes frame-types=admit-only-vlan-tagged igmp-snooping=yes ingress-filtering=no name=bridge1 pvid=4094 vlan-filtering=no
@@ -50,7 +50,7 @@ See [MikroTik Wiki - Manual:Switch Chip Features](https://wiki.mikrotik.com/wiki
 
 This bonds interfaces `sfp-sfpplus7` and `sfp-sfpplus8` together as `bonding1` interface:
 
-```shell
+```console
 /interface bonding
 add lacp-rate=1sec name=bonding1 slaves=sfp-sfpplus7,sfp-sfpplus8 transmit-hash-policy=layer-2-and-3
 ```

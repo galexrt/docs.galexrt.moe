@@ -4,7 +4,7 @@ title: "Cheat Sheet"
 
 ## Allow unsupported Transceivers to be used
 
-```shell
+```console
 enable
 configure terminal
 no errdisable detect cause gbic-invalid
@@ -16,7 +16,7 @@ exit
 
 More to come here to get a Cisco switch running with "cheap" network equipment.
 
-```shell
+```console
 enable
 configure terminal
 no errdisable detect cause gbic-invalid

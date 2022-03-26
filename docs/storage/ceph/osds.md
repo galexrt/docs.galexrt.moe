@@ -12,13 +12,13 @@ title: "OSDs"
 First thing is to set the crush weight to zero, either instantly to `0.0` or a bit gracefully*.
 (*gracefully should always be used when the cluster is in use, though any OSD weight change will cause data redistribution)
 
-```shell
+```console
 ceph osd crush reweight osd.<ID> 0.0
 ```
 
 or graceful:
 
-```shell
+```console
 for i in {9 1}; do
     ceph osd crush reweight osd.<ID> 0.$i
     # Wait five minutes each step or longer depending on your Ceph cluster recovery speed
@@ -28,11 +28,11 @@ done
 
 After the reweight, set the OSD out and remove it (+ its credentials):
 
-```shell
+```console
 ceph osd out <ID>
 ```
 
-```shell
+```console
 ceph osd crush remove osd.<ID>
 ceph auth del osd.<ID>
 ceph osd rm <ID>
