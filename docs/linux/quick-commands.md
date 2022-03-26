@@ -102,7 +102,7 @@ Where `/dev/sdXY` could be, `/dev/sda2`, `/dev/nvme0n1p1`, and so on.
 ```console
 $ jpegoptim -p --strip-com --strip-iptc -m 95 IMAGE.jpeg
 # Find and optimize PNGs in parallel
-$ find -iname '*.jpg' -iname '*.jpeg' -print0 | xargs -n1 -P6 -0 jpegoptim -p --strip-com --strip-iptc -m 95
+$ find \( -iname '*.jpg' -or -iname '*.jpeg' \) -print0 | xargs -n1 -P6 -0 jpegoptim -p --strip-com --strip-iptc -m 95
 ```
 
 ### Optimize PNG Images
@@ -118,5 +118,5 @@ $ find -iname '*.png' -print0 | xargs -n1 -P6 -0 optipng -strip all -clobber -fi
 ```console
 $ exiftool -overwrite_original -all= IMAGE1.jpeg IMAGE2.png ...
 # Remove EXIF data from all `*.jpeg` files
-$ find -iname '*.jpeg' -exec exiftool -overwrite_original -all= {} \;
+$ find \( -iname '*.jpg' -or -iname '*.jpeg' -or -iname '*.png' \) -exec exiftool -overwrite_original -all= {} \;
 ```
