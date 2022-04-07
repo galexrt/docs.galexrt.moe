@@ -34,6 +34,7 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
+    - privacy
     - search.highlight
     - search.share
     - search.suggest
