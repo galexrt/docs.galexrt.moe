@@ -2,312 +2,312 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.galexrt.moe/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/privacy-policy/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/site-notice/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/databases/mysql/cheat-sheet/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/databases/mysql/event_scheduler/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/databases/mysql/init_file/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/databases/mysql/pitfalls/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/databases/mysql/slow-log/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/general/tools-utilities/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/general/useful-online-tools/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/general/visual-studio-code/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/cheat-sheet/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/cluster-components-upgrade-order/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/kubeadm/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/name-schema/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/system-requirements/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/ETCD/cheat-sheet/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/ETCD/editing-kubernetes-objects/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/ETCD/snapshots-save-restore/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/logging/regex/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/monitoring/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/monitoring/components/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/networking/benchmarking/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/networking/explained/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/kubernetes/networking/troubleshooting/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/linux/git/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/linux/mdam/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/linux/quick-commands/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/linux/sysctl/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/linux/GRUB/preparations-for-boot-xyz-file/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/linux/GRUB/Boot-XYZ-File/img-File/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/linux/GRUB/Boot-XYZ-File/iso-File/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/logging/loki/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/monitoring/thanos/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/monitoring/prometheus/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/monitoring/prometheus/tips/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/monitoring/prometheus/exporters/dellhw_exporter/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/monitoring/prometheus/exporters/ethtool_exporter/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/monitoring/prometheus/exporters/node_exporter/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/monitoring/prometheus/exporters/others/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/networking/cloudflare/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/networking/cisco/acls/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/networking/cisco/cheat-sheet/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/networking/cisco/switch-configuration/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/networking/fiber/cheat-sheet/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/networking/fiber/glossar/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/networking/mikrotik/cheat-sheet/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/networking/mikrotik/example-configs/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/software/crio/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/software/docker-registry/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/software/gitlab-ci/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/software/harbor-registry/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/NFS/common-issues/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/ceph/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/ceph/common-issues/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/ceph/osds/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/ceph/rbd/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/gluster/common-issues/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/rook/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/rook/architecture/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/rook/cheat-sheet/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.galexrt.moe/storage/rook/common-issues/</loc>
-         <lastmod>2022-03-26</lastmod>
+         <lastmod>2022-04-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
