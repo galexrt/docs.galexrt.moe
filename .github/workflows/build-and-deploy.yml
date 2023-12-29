@@ -9,19 +9,22 @@ jobs:
     container:
       image: "ghcr.io/galexrt/mkdocs-material-insiders"
       credentials:
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: ${{ github.repository.owner }}
         password: ${{ secrets.GHCR_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: false
+
       - uses: actions/cache@v3
         with:
           key: ${{ github.ref }}
           path: .cache
+
       - name: Build
         run: |
           mkdocs build --clean
+
       - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
         with:
