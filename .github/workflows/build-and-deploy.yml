@@ -9,7 +9,7 @@ jobs:
     container:
       image: "ghcr.io/galexrt/mkdocs-material-insiders"
       credentials:
-        username: ${{ github.repository.owner }}
+        username: ${{ github.repository_owner }}
         password: ${{ secrets.GHCR_TOKEN }}
     steps:
       - uses: actions/checkout@v4
