@@ -54,3 +54,36 @@ This bonds interfaces `sfp-sfpplus7` and `sfp-sfpplus8` together as `bonding1` i
 /interface bonding
 add lacp-rate=1sec name=bonding1 slaves=sfp-sfpplus7,sfp-sfpplus8 transmit-hash-policy=layer-2-and-3
 ```
+
+## Wireguard VPN Client
+
+These commands are based on several guides as "one" just didn't work.
+
+```console
+/ip/address/add interface=wg0 address=CLIENT_IPV4/32 network=VPN_IPV4_GATEWAY comment="Wireguard VPN"
+/ipv6/address/add interface=wg0 address=CLIENT_IPV6/64 comment="Wireguard VPN"
+
+/routing/table/add name=wg0 fib comment="Wireguard VPN"
+/ip/route/add gateway=VPN_IPV4_GATEWAY dst-address=0.0.0.0/0 routing-table=wg0 comment="Wireguard VPN"
+/ipv6/route/add gateway=VPN_IPV6_GATEWAY%wg0 dst-address=::/0 routing-table=wg0 comment="Wireguard VPN"
+/routing/rule/add action=lookup-only-in-table table=wg0 routing-mark=wg0 comment="Wireguard VPN"
+
+/ip/firewall/nat/add action=masquerade out-interface=wg0 chain=srcnat comment="Wireguard VPN"
+/ip/firewall/filter/add action=drop chain=input in-interface=wg0 comment="Wireguard VPN"
+/ip/firewall/filter/add action=drop chain=forward in-interface=wg0 connection-state=new connection-nat-state=!dstnat comment="Wireguard VPN"
+
+/ipv6/firewall/nat/add action=masquerade chain=srcnat out-interface=wg0 comment="Wireguard VPN"
+/ipv6/firewall/filter/add action=drop chain=input in-interface=wg0 comment="Wireguard VPN"
+/ipv6/firewall/filter/add action=drop chain=forward in-interface=wg0 connection-state=new comment="Wireguard VPN"
+
+/ip/firewall/address-list
+add address=192.168.1.100 comment="Wireguard VPN" list=wg0 comment="Wireguard VPN" # Single IP or IP ranges that should be routed via the VPN
+
+/ip/firewall/mangle/add chain=prerouting in-interface=vlan_100_guest action=mark-routing new-routing-mark=wg0 connection-nat-state=!dstnat passthrough=no comment="Wireguard VPN"
+/ipv6/firewall/mangle/add chain=prerouting in-interface=vlan_100_guest action=mark-routing new-routing-mark=wg0 passthrough=no comment="Wireguard VPN"
+# You might want to consider using an address list of your LAN addresses that should be reachable from devices that are routed via the VPN
+# Example: /ip/firewall/mangle/add action=mark-routing chain=prerouting connection-nat-state=!dstnat dst-address-list=!LAN new-routing-mark=wg0 passthrough=no src-address-list=wg0 comment="Wireguard VPN"
+
+/ip/firewall/filter/add action=accept chain=input comment="Allow WireGuard" dst-port=51820 protocol=udp src-address="VPN_SERVER_IPV4_ADDRESS" comment="Wireguard VPN"
+/ipv6/firewall/filter/add action=accept chain=input comment="Allow WireGuard" dst-port=51820 protocol=udp src-address="VPN_SERVER_IPV6_ADDRESS" comment="Wireguard VPN"
+```
